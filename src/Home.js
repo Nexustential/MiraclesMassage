@@ -1,25 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState, React } from "react";
+import "./home.css";
+import Logo from "./logos/logo192.png";
 
-function App() {
+const Home = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Test Edit
+    <nav className="navBar">
+      <div>
+        <a>
+          <img src={Logo} width={70} />
         </a>
-      </header>
-    </div>
+      </div>
+      <nav className="links">
+        <a>Home</a>
+        <a>Services</a>
+        <a>Book</a>
+        <a>About</a>
+      </nav>
+    </nav>
   );
-}
+};
 
-export default App;
+export default Home;

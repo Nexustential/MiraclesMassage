@@ -1,0 +1,19 @@
+body {
+  background-color: black;
+  color: white;
+}
+
+.navBar {
+  display: flex;
+  justify-content: space-around;
+}
+
+.links {
+  display: flex;
+  align-items: center;
+  gap: 2em;
+}
+
+.links a {
+  font-size: 1.2em;
+}
