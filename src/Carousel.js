@@ -1,5 +1,10 @@
-const Carousel = () => {
-  return <h1>Carousel Component</h1>;
-};
+import "./carousel.css";
 
+const Carousel = () => {
+  return (
+    <div className="carousel-container">
+      <h1>Carousel</h1>
+    </div>
+  );
+};
 export default Carousel;
