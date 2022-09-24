@@ -1,0 +1,14 @@
+.missionStatement {
+  background-color: rgb(110, 129, 145);
+  max-width: 1000px;
+  min-width: 600px;
+  height: 300px;
+  border-radius: 5px;
+  margin: auto;
+  margin-top: 1.4em;
+  text-align: center;
+}
+
+.missionStatement p {
+  margin: 2em;
+}
