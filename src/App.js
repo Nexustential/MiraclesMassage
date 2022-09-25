@@ -1,15 +1,20 @@
-import Home from "../src/Components/Home";
-import Carousel from "../src/Components/Carousel";
-import Services from "../src/Components/Services";
-import Mission from "../src/Components/MissionStatement";
+import NavBar from "./Components/NavBar";
+import About from "./Pages/About";
+import Home from "./Pages/Home";
+import Services from "./Pages/ServicesPage";
+import Book from "./Pages/Book";
+import { Route, Routes } from "react-router-dom";
 
 const App = () => {
   return (
     <div>
-      <Home />
-      <Carousel />
-      <Mission />
-      <Services />
+      <NavBar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/services" element={<Services />} />
+        <Route path="/book" element={<Book />} />
+      </Routes>
     </div>
   );
 };
