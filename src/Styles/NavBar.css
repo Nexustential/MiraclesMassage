@@ -1,0 +1,17 @@
+body {
+  background-color: black;
+  color: white;
+}
+
+.navBar {
+  display: flex;
+  justify-content: space-around;
+
+  background-color: rgb(110, 129, 145);
+}
+
+.links {
+  display: flex;
+  align-items: center;
+  gap: 2em;
+}

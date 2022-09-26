@@ -1,0 +1,22 @@
+.services {
+  background-color: rgb(110, 129, 145);
+  max-width: 1000px;
+  min-width: 600px;
+  height: 300px;
+  border-radius: 5px;
+  margin: auto;
+  margin-top: 1.4em;
+  text-align: center;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 0.5em;
+}
+
+.services div {
+  width: 200px;
+  height: 250px;
+  border: none;
+  background-color: lightgrey;
+  border-radius: 5px;
+}
