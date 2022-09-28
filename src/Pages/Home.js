@@ -1,11 +1,11 @@
-import Carousel from "../Components/Carousel";
+import CarouselFade from "../Components/CarouselFade";
 import Services from "../Components/Services";
 import Mission from "../Components/MissionStatement";
 
 const Home = () => {
   return (
     <>
-      <Carousel />
+      <CarouselFade />
       <Mission />
       <Services />
     </>
