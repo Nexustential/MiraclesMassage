@@ -1,11 +1,10 @@
 .services {
-  background-color: rgb(110, 129, 145);
+  background-color: darkgray;
   max-width: 1000px;
-  min-width: 600px;
-  height: 300px;
-  border-radius: 5px;
+  min-width: 414px;
+  height: 400px;
+  width: auto;
   margin: auto;
-  margin-top: 1.4em;
   text-align: center;
   display: flex;
   justify-content: space-evenly;
@@ -14,8 +13,8 @@
 }
 
 .services div {
-  width: 200px;
-  height: 250px;
+  width: 275px;
+  height: 360px;
   border: none;
   background-color: lightgrey;
   border-radius: 5px;

@@ -3,6 +3,7 @@ import "../Styles/MissionStatement.css";
 const Mission = () => {
   return (
     <div className="missionStatement">
+      <br />
       <h1>Mission Statement</h1>
       <p>
         Pellentesque habitant morbi tristique senectus et netus et malesuada
