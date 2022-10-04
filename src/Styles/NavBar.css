@@ -1,12 +1,6 @@
-body {
-  background-color: black;
-  color: white;
-}
-
 .navBar {
   display: flex;
   justify-content: space-around;
-
   background-color: rgb(110, 129, 145);
 }
 
