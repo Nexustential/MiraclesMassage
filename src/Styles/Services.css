@@ -1,21 +1,50 @@
-.services {
+#serviceCardHeader {
   background-color: darkgray;
   max-width: 1000px;
   min-width: 414px;
-  height: 400px;
+  max-height: 600px;
+  height: 40px;
   width: auto;
   margin: auto;
+  padding-top: 0.5em ;
   text-align: center;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  gap: 0.5em;
 }
 
-.services div {
-  width: 275px;
-  height: 360px;
-  border: none;
-  background-color: lightgrey;
-  border-radius: 5px;
+.services {
+  background-color: darkgray;
+  max-width: 1000px;
+  min-width: 414px;
+  max-height: 600px;
+  height: 500px;
+  width: auto;
+  margin: auto;
+  padding-top: 1em;
+  text-align: center;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  /* gap: 0.5em; */
+}
+
+#serviceCards {
+  height: 450px;
+  max-height: 550px;
+  margin: auto;
+  width: auto;
+  height: auto;
+}
+
+#bookButton {
+  color: white;
+  background-color: #0000ff;
+}
+
+#bookButton:hover {
+  color: #0000ff;
+  background-color: white;
+  box-shadow: 4px 4px;
+  font-weight: 700;
 }
