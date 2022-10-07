@@ -9,3 +9,8 @@
   align-items: center;
   gap: 2em;
 }
+@media screen and (max-width: 600px) {
+  .links {
+    display: none;
+  }
+}
