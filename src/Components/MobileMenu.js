@@ -2,12 +2,13 @@ import { useState } from "react";
 import Hamburger from "hamburger-react";
 import "../Styles/MobileMenu.css";
 
-const LinksToShow = () => {
-  return <h2>Sample one!</h2>;
+const LinksToShow = (props) => {
+  return <h1>Sample one!</h1>;
 };
 
 const MobileMenu = () => {
   const [isOpen, setOpen] = useState(false);
+
   return (
     <div className="hamburgerMenu">
       <Hamburger
@@ -15,7 +16,7 @@ const MobileMenu = () => {
         color="white"
         rounded
         onToggle={(toggled) =>
-          toggled ? console.log("function") : console.log("no-function")
+          toggled ? <LinksToShow /> : console.log("no-function")
         }
         toggled={isOpen}
         toggle={setOpen}
