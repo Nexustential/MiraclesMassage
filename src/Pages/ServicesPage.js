@@ -26,9 +26,9 @@ function ServicesPage() {
     },
   ];
 
-  const renderCard = (card) => {
+  const renderCard = (card, index) => {
     return (
-      <Card id="cardStyle">
+      <Card key={index} id="cardStyle">
         <Card.Body>
           <Card.Img id="imageStyle" src={card.Image} />
           <div id="textStyleForCard">
