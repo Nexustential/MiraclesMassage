@@ -1,48 +1,38 @@
-.cradStyle{
-    border: 0;
-    border-radius: 0%;
-    background-color: #83F28F;
+#cardStyle {
+  border: 0;
+  border-radius: 0%;
+  background-color: #83f28f;
 }
-.imageStyle{
-    box-shadow: 0 8px 20px 0 rgba(0,0,0,0.2);
-    border: 0;
-    border-radius: 0%;
-    
-    
+#imageStyle {
+  box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.2);
+  border: 0;
+  border-radius: 0%;
 }
-.textStyleForCard{
-    padding-top: 2rem;
-    color: #FFFD4F;
-    text-shadow: 2px 2px #727272;
-    font-size: larger;
-    
+#textStyleForCard {
+  padding-top: 2rem;
+  color: #fffd4f;
+  text-shadow: 2px 2px #727272;
+  font-size: larger;
 }
-.textStyleForCardTitle{
-    font-size: 2rem;
+#textStyleForCardTitle {
+  font-size: 2rem;
 }
-
 
 @media (min-width: 1000px) {
-    .imageStyle{
-        width: 50rem;
-        float: left;
-        
-    
-    }
-    .textStyleForCard{
-       
-        text-align: center;
-      
-        
-    }
+  #imageStyle {
+    width: 50rem;
+    float: left;
+  }
+  #textStyleForCard {
+    text-align: center;
+  }
 }
-.buttonStyle{
-    border: 0;
-   border-radius: 0%;
-   background-color: #FFFD4F ;
-   color: rgba(0, 0, 0, 0.945);
-   
+#buttonStyle {
+  border: 0;
+  border-radius: 0%;
+  background-color: #fffd4f;
+  color: rgba(0, 0, 0, 0.945);
 }
-:hover.buttonStyle{
-    background-color: rgba(240, 248, 255, 0.233);
+#buttonStyle:hover {
+  background-color: rgba(240, 248, 255, 0.233);
 }
