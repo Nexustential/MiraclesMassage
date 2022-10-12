@@ -1,8 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import { Card, Button } from "react-bootstrap";
 import "../Styles/ServicesPage.css";
 
 function ServicesPage() {
+
+  const [book, setBook] = useState("BOOK NOW!");
+
   const servicesInfo = [
     {
       Image: require("../images/rock.jpg"),
@@ -34,7 +37,10 @@ function ServicesPage() {
           <div id="textStyleForCard">
             <Card.Title id="textStyleForCardTitle">{card.title}</Card.Title>
             <Card.Text>{card.text}</Card.Text>
-            <Button id="buttonStyle">TIME TO RELAX BOOK NOW</Button>
+            <Button 
+              id="buttonStyle" 
+              onClick={() => setBook("Call or text us today at 555-555-5555")}
+            >{book}</Button>
           </div>
         </Card.Body>
       </Card>
