@@ -4,3 +4,7 @@
   max-width: 1000px;
   margin: auto;
 }
+
+.carousel {
+  z-index: 0;
+}

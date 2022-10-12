@@ -1,4 +1,3 @@
-import { useState, React } from "react";
 import "../Styles/NavBar.css";
 import Logo from "../logos/logoMiracles.png";
 import { Link } from "react-router-dom";
