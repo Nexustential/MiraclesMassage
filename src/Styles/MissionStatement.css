@@ -3,12 +3,16 @@
   max-width: 1000px;
   min-width: 414px;
   width: auto;
-  height: 300px;
+  height: 300px auto;
+  max-height: 600px;
   margin: auto;
   text-align: center;
+  flex-wrap: wrap;
 }
 
 .missionStatement p {
   margin: 2em;
+  margin-bottom: 0px;
+  padding-bottom: 2em;
 }
 
