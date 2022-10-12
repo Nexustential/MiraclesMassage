@@ -1,0 +1,50 @@
+.hamburgerMenu {
+  display: none;
+  position: absolute;
+  right: 10px;
+  top: 15px;
+  z-index: 2;
+}
+
+@media screen and (max-width: 600px) {
+  .hamburgerMenu {
+    display: block;
+  }
+}
+
+@keyframes leftToRight {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+.overlay {
+  color: black;
+  height: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(108, 132, 161);
+  opacity: 0.9;
+  overflow-x: hidden;
+  animation: leftToRight ease 0.4s;
+  animation-fill-mode: both;
+}
+
+.overlayContent {
+  position: relative;
+  top: 30%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+  color: lightgrey;
+  font-size: 2.2em;
+}
+.overlayContent:hover {
+  color: white;
+  cursor: pointer;
+}

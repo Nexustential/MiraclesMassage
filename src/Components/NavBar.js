@@ -1,7 +1,7 @@
-import { useState, React } from "react";
 import "../Styles/NavBar.css";
 import Logo from "../logos/logoMiracles.png";
 import { Link } from "react-router-dom";
+import MobileMenu from "./MobileMenu";
 
 const NavBar = () => {
   let linksStyle = {
@@ -16,6 +16,7 @@ const NavBar = () => {
   const condition = false;
   return (
     <nav className="navBar">
+      <MobileMenu />
       <div>
         <a>
           <img src={Logo} width={150} height={80} />
