@@ -29,9 +29,6 @@ const NavBar = () => {
         <Link style={linksStyle} to="/services">
           Services
         </Link>
-        <Link style={linksStyle} to="/book">
-          Book
-        </Link>
         <Link style={linksStyle} to="/about">
           About
         </Link>
