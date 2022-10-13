@@ -31,19 +31,21 @@ function ServicesPage() {
 
   const renderCard = (card, index) => {
     return (
-      <Card key={index} id="cardStyle">
+      <div className="servicesPage1">
+      <Card key={index} className="servicesCardStyle">
         <Card.Body>
-          <Card.Img id="imageStyle" src={card.Image} />
-          <div id="textStyleForCard">
-            <Card.Title id="textStyleForCardTitle">{card.title}</Card.Title>
+          <Card.Img className="servicesImageStyle" src={card.Image} />
+          <div className="servicesTextStyleForCard">
+            <Card.Title className="servicesTextStyleForCardTitle">{card.title}</Card.Title>
             <Card.Text>{card.text}</Card.Text>
             <Button 
-              id="buttonStyle" 
+              className="servicesButtonStyle" 
               onClick={() => setBook("Call or text us today at 555-555-5555")}
             >{book}</Button>
           </div>
         </Card.Body>
       </Card>
+      </div>
     );
   };
 
