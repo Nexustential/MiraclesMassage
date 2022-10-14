@@ -29,6 +29,7 @@ function ServicesPage() {
 
   const [bookButtons, setBookButtons] = useState(new Array(servicesInfo.length).fill(false));
 
+  //to handle the button click so each individual button works separately
   const handleButtonClick = (index) => {
     const newBookButtons = [...bookButtons];
     newBookButtons[index] = !newBookButtons[index];
