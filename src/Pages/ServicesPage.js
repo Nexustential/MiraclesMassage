@@ -4,8 +4,6 @@ import "../Styles/ServicesPage.css";
 
 function ServicesPage() {
 
-  const [book, setBook] = useState("BOOK NOW!");
-
   const servicesInfo = [
     {
       Image: require("../images/rock.jpg"),
@@ -29,10 +27,18 @@ function ServicesPage() {
     },
   ];
 
+  const [bookButtons, setBookButtons] = useState(new Array(servicesInfo.length).fill(false));
+
+  const handleButtonClick = (index) => {
+    const newBookButtons = [...bookButtons];
+    newBookButtons[index] = !newBookButtons[index];
+    setBookButtons(newBookButtons);
+  }
+
   const renderCard = (card, index) => {
     return (
-      <div className="servicesPage1">
-      <Card key={index} className="servicesCardStyle">
+      <div className="servicesPage1" key={index}>
+      <Card  className="servicesCardStyle">
         <Card.Body>
           <Card.Img className="servicesImageStyle" src={card.Image} />
           <div className="servicesTextStyleForCard">
@@ -40,8 +46,8 @@ function ServicesPage() {
             <Card.Text>{card.text}</Card.Text>
             <Button 
               className="servicesButtonStyle" 
-              onClick={() => setBook("Call or text us today at 555-555-5555")}
-            >{book}</Button>
+              onClick={() => handleButtonClick(index)}
+            >{bookButtons[index] ? "Call or text us today at 555-555-5555" : "BOOK NOW!"}</Button>
           </div>
         </Card.Body>
       </Card>
