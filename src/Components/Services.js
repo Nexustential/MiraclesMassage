@@ -1,9 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
 import "../Styles/Services.css";
 
 const Services = () => {
+
+  const [book, setBook] = useState("BOOK NOW!");
+  const [book1, setBook1] = useState("BOOK NOW!");
+  const [book2, setBook2] = useState("BOOK NOW!");
+
   return (
     <>
       <div>
@@ -19,8 +24,12 @@ const Services = () => {
               malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat
               vitae, ultricies eget, tempor sit amet, ante.
             </Card.Text>
-            <Button variant="primary" id="bookButton" href="/book">
-              Book Now!
+            <Button 
+              variant="primary" 
+              id="bookButton"
+              onClick={() => setBook("Call or text us today at 555-555-5555")}
+            >
+              {book}
             </Button>
           </Card.Body>
         </Card>
@@ -34,8 +43,12 @@ const Services = () => {
               malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat
               vitae, ultricies eget, tempor sit amet, ante.
             </Card.Text>
-            <Button variant="primary" id="bookButton" href="/book">
-              Book Now!
+            <Button 
+              variant="primary" 
+              id="bookButton"
+              onClick={() => setBook1("Call or text us today at 555-555-5555")}
+            >
+              {book1}
             </Button>
           </Card.Body>
         </Card>
@@ -49,8 +62,12 @@ const Services = () => {
               malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat
               vitae, ultricies eget, tempor sit amet, ante.
             </Card.Text>
-            <Button variant="primary" id="bookButton" href="/book">
-              Book Now!
+            <Button 
+              variant="primary" 
+              id="bookButton"
+              onClick={() => setBook2("Call or text us today at 555-555-5555")}
+            >
+              {book2}
             </Button>
           </Card.Body>
         </Card>
