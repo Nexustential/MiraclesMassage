@@ -4,8 +4,6 @@ import "../Styles/ServicesPage.css";
 
 function ServicesPage() {
 
-  const [book, setBook] = useState("BOOK NOW!");
-
   const servicesInfo = [
     {
       Image: require("../images/rock.jpg"),
@@ -29,21 +27,32 @@ function ServicesPage() {
     },
   ];
 
+  const [bookButtons, setBookButtons] = useState(new Array(servicesInfo.length).fill(false));
+
+  //to handle the button click so each individual button works separately
+  const handleButtonClick = (index) => {
+    const newBookButtons = [...bookButtons];
+    newBookButtons[index] = !newBookButtons[index];
+    setBookButtons(newBookButtons);
+  }
+
   const renderCard = (card, index) => {
     return (
-      <Card key={index} id="cardStyle">
+      <div className="servicesPage1" key={index}>
+      <Card  className="servicesCardStyle">
         <Card.Body>
-          <Card.Img id="imageStyle" src={card.Image} />
-          <div id="textStyleForCard">
-            <Card.Title id="textStyleForCardTitle">{card.title}</Card.Title>
+          <Card.Img className="servicesImageStyle" src={card.Image} />
+          <div className="servicesTextStyleForCard">
+            <Card.Title className="servicesTextStyleForCardTitle">{card.title}</Card.Title>
             <Card.Text>{card.text}</Card.Text>
             <Button 
-              id="buttonStyle" 
-              onClick={() => setBook("Call or text us today at 555-555-5555")}
-            >{book}</Button>
+              className="servicesButtonStyle" 
+              onClick={() => handleButtonClick(index)}
+            >{bookButtons[index] ? "Call or text us today at 555-555-5555" : "BOOK NOW!"}</Button>
           </div>
         </Card.Body>
       </Card>
+      </div>
     );
   };
 

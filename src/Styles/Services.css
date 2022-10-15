@@ -1,4 +1,4 @@
-#serviceCardHeader {
+.serviceCardHeader {
   background-color: darkgray;
   max-width: 1000px;
   min-width: 414px;
@@ -14,7 +14,7 @@
   align-items: center;
 }
 
-.services {
+.services1 {
   background-color: darkgray;
   max-width: 1000px;
   min-width: 414px;
@@ -31,7 +31,7 @@
   flex-wrap: wrap;
 }
 
-#serviceCards {
+.services1 .serviceCards {
   height: 450px;
   max-height: 550px;
   margin: auto;
@@ -39,19 +39,19 @@
   height: auto;
 }
 
-#bookButton {
+.services1 .bookButton {
   color: white;
   background-color: rgb(115, 142, 165);
 }
 
-#bookButton:hover {
+.services1 .bookButton:hover {
   color: #0000ff;
   background-color: white;
   box-shadow: 4px 4px;
   font-weight: 700;
 }
 
-#bookButton:active {
+.services1 .bookButton:active {
   color: white;
   background-color: rgb(115, 142, 165);
   box-shadow: none;

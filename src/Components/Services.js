@@ -12,10 +12,10 @@ const Services = () => {
   return (
     <>
       <div>
-        <h1 id="serviceCardHeader">Our Most Popular Services</h1>
+        <h1 className="serviceCardHeader">Our Most Popular Services</h1>
       </div>
-      <div className="services">
-        <Card style={{ width: "19rem" }} id="serviceCards">
+      <div className="services1">
+        <Card style={{ width: "19rem" }} className="serviceCards">
           <Card.Img variant="top" src={require("../images/massage1.jpg")} />
           <Card.Body>
             <Card.Title>Service 1</Card.Title>
@@ -26,7 +26,7 @@ const Services = () => {
             </Card.Text>
             <Button 
               variant="primary" 
-              id="bookButton"
+              className="bookButton"
               onClick={() => setBook("Call or text us today at 555-555-5555")}
             >
               {book}
@@ -34,7 +34,7 @@ const Services = () => {
           </Card.Body>
         </Card>
 
-        <Card style={{ width: "19rem" }} id="serviceCards">
+        <Card style={{ width: "19rem" }} className="serviceCards">
           <Card.Img variant="top" src={require("../images/massage2.jpg")} />
           <Card.Body>
             <Card.Title>Service 2</Card.Title>
@@ -45,7 +45,7 @@ const Services = () => {
             </Card.Text>
             <Button 
               variant="primary" 
-              id="bookButton"
+              className="bookButton"
               onClick={() => setBook1("Call or text us today at 555-555-5555")}
             >
               {book1}
@@ -53,7 +53,7 @@ const Services = () => {
           </Card.Body>
         </Card>
 
-        <Card style={{ width: "19rem" }} id="serviceCards">
+        <Card style={{ width: "19rem" }} className="serviceCards">
           <Card.Img variant="top" src={require("../images/massage3.jpg")} />
           <Card.Body>
             <Card.Title>Service 3</Card.Title>
@@ -64,7 +64,7 @@ const Services = () => {
             </Card.Text>
             <Button 
               variant="primary" 
-              id="bookButton"
+              className="bookButton"
               onClick={() => setBook2("Call or text us today at 555-555-5555")}
             >
               {book2}
