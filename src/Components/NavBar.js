@@ -1,6 +1,6 @@
 import "../Styles/NavBar.css";
 import Logo from "../logos/logoMiracles.png";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import MobileMenu from "./MobileMenu";
 
 const NavBar = () => {
@@ -13,7 +13,7 @@ const NavBar = () => {
     textDecoration: "underline",
     color: "red",
   };
-  const condition = false;
+
   return (
     <nav className="navBar">
       <MobileMenu />
@@ -23,15 +23,15 @@ const NavBar = () => {
         </a>
       </div>
       <nav className="links">
-        <Link style={linksStyle} to="/">
+        <NavLink style={linksStyle} to="/">
           Home
-        </Link>
-        <Link style={linksStyle} to="/services">
+        </NavLink>
+        <NavLink style={linksStyle} to="/services">
           Services
-        </Link>
-        <Link style={linksStyle} to="/about">
+        </NavLink>
+        <NavLink style={linksStyle} to="/about">
           About
-        </Link>
+        </NavLink>
       </nav>
     </nav>
   );
