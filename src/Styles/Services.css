@@ -19,7 +19,7 @@
   max-width: 1000px;
   min-width: 414px;
   max-height: 1500px;
-  height: 1000px auto;
+  height: 1100px auto;
   width: auto;
   margin: auto;
   padding-top: 1em;
@@ -40,19 +40,34 @@
 }
 
 .services1 .bookButton {
-  color: white;
-  background-color: rgb(115, 142, 165);
+  color: black;
+  background-color: darkgray;
 }
 
 .services1 .bookButton:hover {
-  color: #0000ff;
-  background-color: white;
-  box-shadow: 4px 4px;
+  background-color: rgb(115, 142, 165);
   font-weight: 700;
 }
 
-.services1 .bookButton:active {
-  color: white;
-  background-color: rgb(115, 142, 165);
+.callHook {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.moreServicesButtonDiv {
+  max-width: 980px;
+  min-width: 400px;
+  margin: 7px;
+}
+
+.moreServicesButtonDiv .servicesButton {
+  color: black;
+  width: 980px auto;
+  min-width: 400px;
+  max-width: 980px;
+  box-shadow: 3px 3px;
+}
+
+.moreServicesButtonDiv .servicesButton:active {
   box-shadow: none;
 }
