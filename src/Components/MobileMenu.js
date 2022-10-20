@@ -1,16 +1,9 @@
 import { useState } from "react";
 import Hamburger from "hamburger-react";
+import { NavLink } from "react-router-dom";
 import "../Styles/MobileMenu.css";
 
-const LinksToShow = () => {
-  return (
-    <div className="overlay">
-      <h1 className="overlayContent">/ Links Sample /</h1>
-    </div>
-  );
-};
-
-const MobileMenu = () => {
+const MobileMenu = (props) => {
   const [isOpen, setOpen] = useState(false);
   return (
     <>
@@ -25,6 +18,23 @@ const MobileMenu = () => {
       </div>
       {isOpen && <LinksToShow />}
     </>
+  );
+};
+
+const LinksToShow = (props) => {
+  console.log(props.isOpen);
+  return (
+    <div className={"overlay" + (props.setOpen ? "overlayCloseContent" : "")}>
+      <NavLink className="overlayContent" to="/">
+        Home
+      </NavLink>
+      <NavLink className="overlayContent" to="/services">
+        Services
+      </NavLink>
+      <NavLink className="overlayContent" to="/about">
+        About
+      </NavLink>
+    </div>
   );
 };
 
