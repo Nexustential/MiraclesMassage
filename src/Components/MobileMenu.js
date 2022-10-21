@@ -3,8 +3,11 @@ import Hamburger from "hamburger-react";
 import { NavLink } from "react-router-dom";
 import "../Styles/MobileMenu.css";
 
-const MobileMenu = (props) => {
+const MobileMenu = () => {
   const [isOpen, setOpen] = useState(false);
+  const closeNavbar = () => {
+    setOpen(false);
+  };
   return (
     <>
       <div className="hamburgerMenu">
@@ -16,25 +19,22 @@ const MobileMenu = (props) => {
           toggle={setOpen}
         />
       </div>
-      {isOpen && <LinksToShow />}
+      <nav className={`overlay ${!isOpen && "overlayCloseContent"}`}>
+        <NavLink onClick={closeNavbar} className="overlayContent" to="/">
+          Home
+        </NavLink>
+        <NavLink
+          onClick={closeNavbar}
+          className="overlayContent"
+          to="/services"
+        >
+          Services
+        </NavLink>
+        <NavLink onClick={closeNavbar} className="overlayContent" to="/about">
+          About
+        </NavLink>
+      </nav>
     </>
-  );
-};
-
-const LinksToShow = (props) => {
-  console.log(props.isOpen);
-  return (
-    <div className={"overlay" + (props.setOpen ? "overlayCloseContent" : "")}>
-      <NavLink className="overlayContent" to="/">
-        Home
-      </NavLink>
-      <NavLink className="overlayContent" to="/services">
-        Services
-      </NavLink>
-      <NavLink className="overlayContent" to="/about">
-        About
-      </NavLink>
-    </div>
   );
 };
 
