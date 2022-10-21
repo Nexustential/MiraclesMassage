@@ -14,14 +14,25 @@
 
 @keyframes leftToRight {
   0% {
-    width: 0;
+    width: 0%;
   }
   100% {
     width: 100%;
   }
 }
 
+@keyframes rightToLeft {
+  0% {
+    width: 100%;
+  }
+  100% {
+    width: 0%;
+  }
+}
+
 .overlay {
+  display: none;
+  flex-direction: column;
   color: black;
   height: 100%;
   position: fixed;
@@ -32,7 +43,18 @@
   opacity: 0.9;
   overflow-x: hidden;
   animation: leftToRight ease 0.4s;
-  animation-fill-mode: both;
+  animation-fill-mode: forwards;
+}
+
+@media screen and (max-width: 600px) {
+  .overlay {
+    display: flex;
+  }
+}
+
+.overlayCloseContent {
+  animation: rightToLeft ease 0.4s;
+  animation-fill-mode: forwards;
 }
 
 .overlayContent {
@@ -42,7 +64,7 @@
   text-align: center;
   margin-top: 30px;
   color: lightgrey;
-  font-size: 2.2em;
+  font-size: 2.3em;
 }
 .overlayContent:hover {
   color: white;
