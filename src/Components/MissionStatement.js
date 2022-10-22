@@ -5,19 +5,11 @@ const Mission = () => {
   return (
     <div className="missionStatement">
       <br />
-      <h1>Mission Statement</h1>
+      <h1>BREATHE. MOVE. CONNECT.</h1>
       <p>
-        Pellentesque habitant morbi tristique senectus et netus et malesuada
-        fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae,
-        ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam
-        egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend
-        leo. Pellentesque habitant morbi tristique senectus et netus et malesuada
-        fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae,
-        ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam
-        egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend
-        leo. Pellentesque habitant morbi tristique senectus et netus et malesuada
-        fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae,
-        ultricies eget, tempor sit amet, ante.
+      Movement and awareness in one’s body and mind are key to a healthy lifestyle.
+      Our mission is holistic wellness by promoting a healthy lifestyle through communication, education, and practice. Miracles Massage provides individually tailored care that focuses on active listening of the client’s needs. Together, we will evaluate daily activities and habits to reach the goals set by our clients.
+      In your first session, we provide a free functional exam to figure out your personalized therapeutic needs. This helps us plan our goals and focus for each session together. I look forward to helping start your healing journey.
       </p>
     </div>
   );

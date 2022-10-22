@@ -1,6 +1,6 @@
 .missionStatement {
   background-color: rgb(110, 129, 145);
-  max-width: 1000px;
+  max-width: 2000px;
   min-width: 414px;
   width: auto;
   height: 300px auto;
@@ -14,4 +14,12 @@
   margin: 2em;
   margin-bottom: 0px;
   padding-bottom: 2em;
+  width: 1000px auto;
+  max-width: 1000px;
+  display: inline-block;
+  font-size: large;
+}
+
+.missionStatement h1 {
+  font-family: Century Gothic;
 }
