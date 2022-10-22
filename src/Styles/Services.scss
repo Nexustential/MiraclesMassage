@@ -1,0 +1,94 @@
+$bg-color: darkgray;
+$activeGrey: rgb(115, 142, 165);
+
+.serviceCardHeader {
+    background-color: $bg-color;
+    max-width: 2000px;
+    min-width: 414px;
+    max-height: 600px;
+    height: 40px;
+    width: auto;
+    margin: auto;
+    padding-top: 2.5em;
+    padding-bottom: 1.5em;
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-family: Century Gothic;
+}
+  
+.services {
+    background-color: $bg-color;
+}
+
+.services1 {
+    max-width: 2000px;
+    min-width: 414px;
+    max-height: 1500px;
+    height: auto;
+    width: auto;
+    margin: auto;
+    padding-top: 1em;
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 0.5em;
+    flex-wrap: wrap;
+}
+
+@media (min-width: 1000px) {
+    .services1 {
+        width: 1000px;
+    }
+
+}
+
+.services1 .serviceCards {
+    height: 450px;
+    max-height: 550px;
+    margin: auto;
+    width: auto;
+    max-width: 19rem;
+    height: auto;
+}
+  
+.services1 .bookButton {
+    color: black;
+    background-color: $bg-color;
+}
+  
+.services1 {
+    
+    .bookButton:hover {
+        font-weight: 700;
+        background-color: $activeGrey;
+    }
+}
+  
+.callHook {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+  
+.services1 .servicesButton {
+    color: black;
+    background-color: $activeGrey;
+    width: 980px auto;
+    min-width: 400px;
+    max-width: 980px;
+    box-shadow: 3px 3px;
+    margin: 7px;
+}
+  
+  
+.services1 .servicesButton:hover {
+    box-shadow: none;
+}
+  
+  
+.services1 .servicesButton:active {
+    box-shadow: none;
+}
+  

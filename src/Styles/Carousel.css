@@ -5,6 +5,10 @@
   margin: auto;
 }
 
+.carousel-container h3 {
+  font-family: Century Gothic;
+}
+
 .carousel {
   z-index: 0;
 }

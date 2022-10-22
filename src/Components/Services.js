@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
-import "../Styles/Services.css";
+import "../Styles/Services.scss";
 
 
-const Services = () => {
+function Services() {
   
   const [book, setBook] = useState("BOOK NOW!");
   const [book1, setBook1] = useState("BOOK NOW!");
@@ -16,30 +16,31 @@ const Services = () => {
 
   const [service, setService] = useState("Full service catalog and money saving packages")
   
-  const phoneNumber = ('555-555-5555');
+  const callPrompt = ("Call or text us today at:")
+  const phoneNumber = ('321-946-3694');
 
   function CallUs(){
     setBook(`${phoneNumber}`);
-    setCall("Call or text us today at:");
+    setCall(`${callPrompt}`);
   }
 
   function CallUs1(){
     setBook1(`${phoneNumber}`);
-    setCall1("Call or text us today at:");
+    setCall1(`${callPrompt}`);
   }
 
   function CallUs2(){
     setBook2(`${phoneNumber}`);
-    setCall2("Call or text us today at:");
+    setCall2(`${callPrompt}`);
   }
   
   return (
-    <>
-      <div>
-        <h1 className="serviceCardHeader">Our Most Popular Services</h1>
+    <div className="services">
+      <div className="serviceCardHeader">
+        <h1>Our Most Popular Services</h1>
       </div>
       <div className="services1">
-        <Card style={{ width: "19rem" }} className="serviceCards">
+        <Card className="serviceCards">
           <Card.Img variant="top" src={require("../images/massage1.jpg")} />
           <Card.Body>
             <Card.Title>Swedish</Card.Title>
@@ -51,17 +52,19 @@ const Services = () => {
             <div className="callHook">
               {call}
             </div>
-            <a href="tel:+5555555555"><Button 
-              variant="secondary" 
-              className="bookButton"
-              onClick={CallUs}
-            >
-              {book}
-            </Button></a>
+            <a href="tel:+3219463694">
+              <Button 
+                variant="secondary" 
+                className="bookButton"
+                onClick={CallUs}
+              >
+                {book}
+              </Button>
+            </a>
           </Card.Body>
         </Card>
 
-        <Card style={{ width: "19rem" }} className="serviceCards">
+        <Card className="serviceCards">
           <Card.Img variant="top" src={require("../images/massage2.jpg")} />
           <Card.Body>
             <Card.Title>Deep Tissue</Card.Title>
@@ -73,17 +76,19 @@ const Services = () => {
             <div className="callHook">
               {call1}
             </div>
-            <a href="tel:+5555555555"><Button 
-              variant="secondary" 
-              className="bookButton"
-              onClick={CallUs1}
-            >
-              {book1}
-            </Button></a>
+            <a href="tel:+3219463694">
+              <Button 
+                variant="secondary" 
+                className="bookButton"
+                onClick={CallUs1}
+              >
+                {book1}
+              </Button>
+            </a>
           </Card.Body>
         </Card>
 
-        <Card style={{ width: "19rem" }} className="serviceCards">
+        <Card className="serviceCards">
           <Card.Img variant="top" src={require("../images/massage3.jpg")} />
           <Card.Body>
             <Card.Title>Thai</Card.Title>
@@ -95,22 +100,22 @@ const Services = () => {
             <div className="callHook">
               {call2}
             </div>
-            <a href="tel:+5555555555"><Button 
-              variant="secondary" 
-              className="bookButton"
-              onClick={CallUs2}
-            >
-              {book2}
-            </Button></a>
+            <a href="tel:+3219463694">
+              <Button 
+                variant="secondary" 
+                className="bookButton"
+                onClick={CallUs2}
+              >
+                {book2}
+              </Button>
+            </a>
           </Card.Body>
         </Card>
-        <div className="moreServicesButtonDiv">
-          <Button variant="secondary" className="servicesButton" href="/services" onClick={() => setService("Loading...")}>
-            {service}
-          </Button>
-        </div>
+        <Button variant="secondary" className="servicesButton" href="/services" onClick={() => setService("Loading...")}>
+          {service}
+        </Button>
       </div>
-    </>
+    </div>
   );
 };
 
