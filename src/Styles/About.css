@@ -1,0 +1,25 @@
+.testimonial-card .card-up {
+    height: 120px;
+    overflow: hidden;
+    border-top-left-radius: 0.25rem;
+    border-top-right-radius: 0.25rem;
+  }
+  
+  .testimonial-card .avatar {
+    width: 110px;
+    margin-top: -60px;
+    overflow: hidden;
+    border: 3px solid #fff;
+    border-radius: 50%;
+  }
+
+ .profile {
+    padding-top: 50px;
+    padding-bottom: 3rem;
+ }
+
+ .img-large {
+    max-width: 100%;
+    height: 150px;
+ }
+
