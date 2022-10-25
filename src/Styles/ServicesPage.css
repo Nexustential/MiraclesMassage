@@ -1,18 +1,24 @@
+.servicesPage{
+  background-color: darkgray;
+}
 .servicesPage1 .servicesCardStyle {
   border: 0;
   border-radius: 0%;
-  background-color: #83f28f;
+  background-color: darkgray;
+  
 }
 .servicesPage1 .servicesImageStyle {
-  box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.2);
+
   border: 0;
   border-radius: 0%;
 }
 .servicesPage1 .servicesTextStyleForCard {
-  padding-top: 2rem;
-  color: #fffd4f;
-  text-shadow: 2px 2px #727272;
+  padding-top: 1rem;
+  padding-bottom: 4rem;
+  padding-left: 2rem;
+  color: #000000;
   font-size: larger;
+ 
 }
 .servicesPage1 .servicesTextStyleForCardTitle {
   font-size: 2rem;
@@ -20,19 +26,28 @@
 
 @media (min-width: 1000px) {
   .servicesPage1 .servicesImageStyle {
-    width: 50rem;
+    width: 40rem;
     float: left;
+    padding-right: 2rem;
   }
   .servicesPage1 .servicesTextStyleForCard {
     text-align: center;
   }
 }
 .servicesPage1 .servicesButtonStyle {
-  border: 0;
-  border-radius: 0%;
-  background-color: #fffd4f;
-  color: rgba(0, 0, 0, 0.945);
+    background-color: rgb(61, 61, 61);
+    border: 0;
+    border-radius: 0%;
+    width: 980px auto;
+    margin: 7px;
+    
 }
-.servicesPage1 .servicesButtonStyle:hover {
-  background-color: rgba(240, 248, 255, 0.233);
+
+.priceingBanner .titleforPriceing {
+  text-align: center;
+
+}
+.priceingBanner .infoForPricing{
+  text-align: center;
+
 }
