@@ -17,7 +17,7 @@ function Services() {
   const [service, setService] = useState("Full service catalog and money saving packages")
   
   const callPrompt = ("Call or text us today at:")
-  const phoneNumber = ('321-946-3694');
+  const phoneNumber = ('214-748-3647');
 
   function CallUs(){
     setBook(`${phoneNumber}`);
@@ -52,7 +52,7 @@ function Services() {
             <div className="callHook">
               {call}
             </div>
-            <a href="tel:+3219463694">
+            <a href="tel:+2147483647">
               <Button 
                 variant="secondary" 
                 className="bookButton"
@@ -65,7 +65,7 @@ function Services() {
         </Card>
 
         <Card className="serviceCards">
-          <Card.Img variant="top" src={require("../images/massage2.jpg")} />
+          <Card.Img variant="top" src={require("../images/deeptissue.jpg")} />
           <Card.Body>
             <Card.Title>Deep Tissue</Card.Title>
             <Card.Text>
@@ -76,7 +76,7 @@ function Services() {
             <div className="callHook">
               {call1}
             </div>
-            <a href="tel:+3219463694">
+            <a href="tel:+2147483647">
               <Button 
                 variant="secondary" 
                 className="bookButton"
@@ -89,7 +89,7 @@ function Services() {
         </Card>
 
         <Card className="serviceCards">
-          <Card.Img variant="top" src={require("../images/massage3.jpg")} />
+          <Card.Img variant="top" src={require("../images/thai.jpg")} />
           <Card.Body>
             <Card.Title>Thai</Card.Title>
             <Card.Text>
@@ -100,7 +100,7 @@ function Services() {
             <div className="callHook">
               {call2}
             </div>
-            <a href="tel:+3219463694">
+            <a href="tel:+2147483647">
               <Button 
                 variant="secondary" 
                 className="bookButton"
