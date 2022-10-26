@@ -10,7 +10,7 @@ const CarouselFade = () => {
           <img
             className="d-block w-100"
             style={{ maxHeight: 500 }}
-            src={require("../images/massage1.jpg")}
+            src={require("../images/massage12.jpg")}
             alt="First slide"
           />
           <Carousel.Caption>
@@ -22,7 +22,7 @@ const CarouselFade = () => {
           <img
             className="d-block w-100"
             style={{ maxHeight: 500 }}
-            src={require("../images/massage2.jpg")}
+            src={require("../images/massage8.jpg")}
             alt="Second slide"
           />
           <Carousel.Caption>
@@ -34,7 +34,7 @@ const CarouselFade = () => {
           <img
             className="d-block w-100"
             style={{ maxHeight: 500 }}
-            src={require("../images/massage3.jpg")}
+            src={require("../images/massage6.jpg")}
             alt="Third slide"
           />
           <Carousel.Caption>
