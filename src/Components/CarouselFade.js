@@ -5,8 +5,8 @@ import Carousel from "react-bootstrap/Carousel";
 const CarouselFade = () => {
   return (
     <div className="carousel-container">
-      <Carousel className="carousel" variant="dark">
-        <Carousel.Item interval={3000}>
+      <Carousel className="carousel" variant="light">
+        <Carousel.Item interval={4000}>
           <img
             className="d-block w-100"
             style={{ maxHeight: 500 }}
@@ -14,23 +14,23 @@ const CarouselFade = () => {
             alt="First slide"
           />
           <Carousel.Caption>
-            <h3>First slide label</h3>
-            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+            <h3>Welcome to Miracles Massage</h3>
+            <p>Relax and let your troubles melt away</p>
           </Carousel.Caption>
         </Carousel.Item>
-        <Carousel.Item interval={3000}>
+        <Carousel.Item interval={4000}>
           <img
             className="d-block w-100"
             style={{ maxHeight: 500 }}
             src={require("../images/massage8.jpg")}
             alt="Second slide"
           />
-          <Carousel.Caption>
-            <h3>Second slide label</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <Carousel.Caption id="carouselCaption2">
+            <h3>Six types of therapy</h3>
+            <p>Browse our full catalog to find the right fit for you</p>
           </Carousel.Caption>
         </Carousel.Item>
-        <Carousel.Item interval={3000}>
+        <Carousel.Item interval={4000}>
           <img
             className="d-block w-100"
             style={{ maxHeight: 500 }}
@@ -38,9 +38,9 @@ const CarouselFade = () => {
             alt="Third slide"
           />
           <Carousel.Caption>
-            <h3>Third slide label</h3>
+            <h3>Couple's Special</h3>
             <p>
-              Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+              Book a session with your significant other and receive a 15% discount!
             </p>
           </Carousel.Caption>
         </Carousel.Item>

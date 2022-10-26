@@ -3,7 +3,7 @@
   max-width: 2000px;
   min-width: 414px;
   width: auto;
-  height: 300px auto;
+  height: auto;
   max-height: 600px;
   margin: auto;
   text-align: center;
@@ -14,7 +14,7 @@
   margin: 2em;
   margin-bottom: 0px;
   padding-bottom: 2em;
-  width: 1000px auto;
+  width: auto;
   max-width: 1000px;
   display: inline-block;
   font-size: large;

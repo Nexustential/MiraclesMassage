@@ -12,3 +12,7 @@
 .carousel {
   z-index: 0;
 }
+
+#carouselCaption2 {
+  color: black;
+}

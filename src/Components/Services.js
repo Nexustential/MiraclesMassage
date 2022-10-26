@@ -41,13 +41,11 @@ function Services() {
       </div>
       <div className="services1">
         <Card className="serviceCards">
-          <Card.Img variant="top" src={require("../images/massage1.jpg")} />
+          <Card.Img variant="top" src={require("../images/swedish.jpg")} />
           <Card.Body>
             <Card.Title>Swedish</Card.Title>
             <Card.Text>
-              Pellentesque habitant morbi tristique senectus et netus et
-              malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat
-              vitae, ultricies eget, tempor sit amet, ante.
+              Swedish massage is one of the most commonly offered massage techniques. It’s sometimes called a classic massage. The technique aims to promote relaxation by releasing muscle tension. 
             </Card.Text>
             <div className="callHook">
               {call}
@@ -69,9 +67,7 @@ function Services() {
           <Card.Body>
             <Card.Title>Deep Tissue</Card.Title>
             <Card.Text>
-              Pellentesque habitant morbi tristique senectus et netus et
-              malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat
-              vitae, ultricies eget, tempor sit amet, ante.
+              In order to reach the deep muscle tissue, a therapist will massage layer by layer of muscle, applying more and more pressure and employing special techniques with the fingers, fists, and even elbows.
             </Card.Text>
             <div className="callHook">
               {call1}
@@ -89,13 +85,11 @@ function Services() {
         </Card>
 
         <Card className="serviceCards">
-          <Card.Img variant="top" src={require("../images/thai.jpg")} />
+          <Card.Img variant="top" src={require("../images/thai2.jpg")} />
           <Card.Body>
             <Card.Title>Thai</Card.Title>
             <Card.Text>
-              Pellentesque habitant morbi tristique senectus et netus et
-              malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat
-              vitae, ultricies eget, tempor sit amet, ante.
+              Thai massage combines compression, acupressure, and passive stretching. These methods increase the range of motion in your joints and muscles. This can greatly improve your posture and back.
             </Card.Text>
             <div className="callHook">
               {call2}

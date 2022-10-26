@@ -9,8 +9,8 @@ $activeGrey: rgb(115, 142, 165);
     height: 40px;
     width: auto;
     margin: auto;
-    padding-top: 2.5em;
-    padding-bottom: 1.5em;
+    padding-top: 3em;
+    padding-bottom: 2em;
     text-align: center;
     display: flex;
     justify-content: space-evenly;
@@ -25,7 +25,7 @@ $activeGrey: rgb(115, 142, 165);
 .services1 {
     max-width: 2000px;
     min-width: 414px;
-    max-height: 1500px;
+    max-height: 1600px;
     height: auto;
     width: auto;
     margin: auto;
@@ -46,7 +46,6 @@ $activeGrey: rgb(115, 142, 165);
 }
 
 .services1 .serviceCards {
-    height: 450px;
     max-height: 550px;
     margin: auto;
     width: auto;
@@ -75,11 +74,12 @@ $activeGrey: rgb(115, 142, 165);
 .services1 .servicesButton {
     color: black;
     background-color: $activeGrey;
-    width: 980px auto;
+    width: auto;
     min-width: 400px;
     max-width: 980px;
     box-shadow: 3px 3px;
     margin: 7px;
+    margin-bottom: 14px;
 }
   
   
