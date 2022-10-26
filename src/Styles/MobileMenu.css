@@ -41,19 +41,17 @@
   background-color: rgb(108, 132, 161);
   opacity: 0.9;
   overflow-x: hidden;
-  animation: leftToRight ease 0.4s;
+  animation: leftToRight ease-in 0.4s;
   animation-fill-mode: forwards;
 }
 
-@media screen and (max-width: 600px) {
-  .overlay {
-    display: flex;
-  }
+.showNavBar {
+  display: flex;
 }
 
 .overlayCloseContent {
-  animation: rightToLeft linear;
-  animation-duration: 0.3s;
+  animation: rightToLeft ease-out;
+  animation-duration: 0.4s;
   animation-fill-mode: forwards;
 }
 

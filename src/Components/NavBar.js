@@ -13,13 +13,16 @@ const NavBar = () => {
     textDecoration: "underline",
     color: "red",
   };
-
+  let logoStyle = {
+    paddingTop: "10px",
+    paddingBottom: "10px",
+  };
   return (
     <nav className="navBar">
       <MobileMenu />
       <div>
         <a>
-          <img src={Logo} width={220} height={80} />
+          <img src={Logo} style={logoStyle} width={220} height={80} />
         </a>
       </div>
       <nav className="links">
