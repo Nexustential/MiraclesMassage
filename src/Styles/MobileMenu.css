@@ -22,10 +22,10 @@
 }
 
 @keyframes rightToLeft {
-  0% {
+  from {
     width: 100%;
   }
-  100% {
+  to {
     width: 0%;
   }
 }
@@ -37,8 +37,7 @@
   height: 100%;
   position: fixed;
   z-index: 1;
-  top: 0;
-  left: 0;
+  right: 0;
   background-color: rgb(108, 132, 161);
   opacity: 0.9;
   overflow-x: hidden;
@@ -53,7 +52,8 @@
 }
 
 .overlayCloseContent {
-  animation: rightToLeft ease 0.4s;
+  animation: rightToLeft linear;
+  animation-duration: 0.3s;
   animation-fill-mode: forwards;
 }
 
