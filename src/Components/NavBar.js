@@ -19,7 +19,7 @@ const NavBar = () => {
       <MobileMenu />
       <div>
         <a>
-          <img src={Logo} width={150} height={80} />
+          <img src={Logo} width={220} height={80} />
         </a>
       </div>
       <nav className="links">
