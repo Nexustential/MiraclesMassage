@@ -12,47 +12,24 @@
   }
 }
 
-@keyframes leftToRight {
-  0% {
-    width: 0%;
-  }
-  100% {
-    width: 100%;
-  }
-}
-
-@keyframes rightToLeft {
-  from {
-    width: 100%;
-  }
-  to {
-    width: 0%;
-  }
-}
-
 .overlay {
-  display: none;
+  display: flex;
   flex-direction: column;
   color: black;
   height: 100%;
+  width: 0%;
   position: fixed;
   z-index: 1;
   right: 0;
   background-color: rgb(108, 132, 161);
   opacity: 0.9;
   overflow-x: hidden;
-  animation: leftToRight ease-in 0.4s;
-  animation-fill-mode: forwards;
+  transition-property: width;
+  transition-duration: 350ms;
 }
 
-.showNavBar {
-  display: flex;
-}
-
-.overlayCloseContent {
-  animation: rightToLeft ease-out;
-  animation-duration: 0.4s;
-  animation-fill-mode: forwards;
+.showContent {
+  width: 100%;
 }
 
 .overlayContent {
