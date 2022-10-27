@@ -19,9 +19,7 @@ const MobileMenu = () => {
           toggle={setOpen}
         />
       </div>
-      <nav
-        className={`overlay showNavBar ${!isOpen && "overlayCloseContent "}`}
-      >
+      <nav className={`overlay ${isOpen && "showContent"}`}>
         <NavLink onClick={closeNavbar} className="overlayContent" to="/">
           Home
         </NavLink>
