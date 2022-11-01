@@ -1,27 +1,30 @@
 .servicesPage{
   background-color: darkgray;
 }
+
 .servicesPage1 .servicesCardStyle {
   border: 0;
   border-radius: 0%;
   background-color: darkgray;
-  
 }
-.servicesPage1 .servicesImageStyle {
 
+.servicesPage1 .servicesImageStyle {
   border: 0;
   border-radius: 0%;
 }
+
 .servicesPage1 .servicesTextStyleForCard {
   padding-top: 1rem;
   padding-bottom: 4rem;
   padding-left: 2rem;
   color: #000000;
   font-size: larger;
- 
 }
+
 .servicesPage1 .servicesTextStyleForCardTitle {
   font-size: 2rem;
+  font-family: Century Gothic;
+  padding-bottom: 30px;
 }
 
 @media (min-width: 1000px) {
@@ -34,20 +37,27 @@
     text-align: center;
   }
 }
+
 .servicesPage1 .servicesButtonStyle {
-    background-color: rgb(61, 61, 61);
-    border: 0;
-    border-radius: 0%;
-    width: 980px auto;
-    margin: 7px;
-    
+  background-color: rgb(61, 61, 61);
+  border: 0;
+  border-radius: 0%;
+  width: 980px auto;
+  margin: 7px; 
 }
 
-.priceingBanner .titleforPriceing {
+.pricingBanner .titleForPricing {
   text-align: center;
-
+  font-family: Century Gothic;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
-.priceingBanner .infoForPricing{
-  text-align: center;
 
+.price {
+  font-family: Century gothic;
+  font-weight: bold;
+}
+
+.bookButton:hover {
+  font-weight: bold;
 }

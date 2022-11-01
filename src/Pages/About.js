@@ -47,7 +47,7 @@ function About() {
       <MDBRow className="d-flex justify-content-center">
         <MDBCol md="10" xl="8" className="text-center">
           <p className="mb-4 pb-2 mb-md-5 pb-md-0">
-          "I became a massage therapist to live a pain-free and more active lifestyle. I knew this could be accomplished by retraining my mind-body connection in order to improve functional movement. This led to more intense workouts, better endurance, and a happier mindset. Now, I’d like to share my knowledge with my clients. My background in health sciences, sports massage, and eastern techniques allows me to look at the human body like a machine. I believe that movement is the best medicine. We are all in a constant state of flux and our bodies love balance. When we are unbalanced, disease sets in. I’ve made it my mission to work with natural energies to help rebalance and heal the body, mind and spirit." -Luis
+          I became a massage therapist to live a pain-free and more active lifestyle. I knew this could be accomplished by retraining my mind-body connection in order to improve functional movement. This led to more intense workouts, better endurance, and a happier mindset. Now, I’d like to share my knowledge with my clients. My background in health sciences, sports massage, and eastern techniques allows me to look at the human body like a machine. I believe that movement is the best medicine. We are all in a constant state of flux and our bodies love balance. When we are unbalanced, disease sets in. I’ve made it my mission to work with natural energies to help rebalance and heal the body, mind and spirit.
           </p>
         </MDBCol>
       </MDBRow>
