@@ -6,17 +6,17 @@ import "../Styles/Services.scss";
 
 function Services() {
   
-  const [book, setBook] = useState("BOOK NOW!");
-  const [book1, setBook1] = useState("BOOK NOW!");
-  const [book2, setBook2] = useState("BOOK NOW!");
+  const [book, setBook] = useState("BOOK NOW");
+  const [book1, setBook1] = useState("BOOK NOW");
+  const [book2, setBook2] = useState("BOOK NOW");
   
   const [call, setCall] = useState("")
   const [call1, setCall1] = useState("")
   const [call2, setCall2] = useState("")
 
-  const [service, setService] = useState("Full service catalog and money saving packages")
+  const [service, setService] = useState("VIEW OUR FULL SERVICE CATALOG")
   
-  const callPrompt = ("Call or text us today at:")
+  const callPrompt = ("Call us today at:");
   const phoneNumber = ('214-748-3647');
 
   function CallUs(){
@@ -85,7 +85,7 @@ function Services() {
         </Card>
 
         <Card className="serviceCards">
-          <Card.Img variant="top" src={require("../images/thai2.jpg")} />
+          <Card.Img variant="top" src={require("../images/thai.jpg")} />
           <Card.Body>
             <Card.Title>Thai</Card.Title>
             <Card.Text>

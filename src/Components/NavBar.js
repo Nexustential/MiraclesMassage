@@ -21,19 +21,25 @@ const NavBar = () => {
     <nav className="navBar">
       <MobileMenu />
       <div>
-        <a>
+        <a href="/">
           <img src={Logo} style={logoStyle} width={220} height={80} />
         </a>
       </div>
       <nav className="links">
         <NavLink style={linksStyle} to="/">
-          Home
+          <div className="navTab">
+            Home
+          </div>
         </NavLink>
         <NavLink style={linksStyle} to="/services">
-          Services
+          <div className="navTab">
+            Services
+          </div>
         </NavLink>
         <NavLink style={linksStyle} to="/about">
-          About
+          <div className="navTab">
+            About
+          </div>
         </NavLink>
       </nav>
     </nav>
