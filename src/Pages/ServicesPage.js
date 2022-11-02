@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Card, Button} from "react-bootstrap";
 import "../Styles/ServicesPage.css";
 import Price from "../Components/PricingForServicesPage";
+import { Fade } from "react-reveal";
 
 
 
@@ -59,6 +60,7 @@ function ServiceCards(){
     return (
       
       <div className="servicesPage1 container" key={index}>
+        <Fade distance="70%" duration={1000}>
         <Card  className="servicesCardStyle">
           <Card.Body>
             <Card.Img className="servicesImageStyle" src={card.Image} />
@@ -80,6 +82,7 @@ function ServiceCards(){
             </div>
           </Card.Body>
         </Card>
+        </Fade>
       </div>
     );
   };
