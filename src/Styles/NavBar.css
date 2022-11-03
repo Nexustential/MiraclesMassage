@@ -15,9 +15,3 @@
     display: none;
   }
 }
-
-.navTab:hover {
-  color: black;
-  text-decoration: underline;
-  text-decoration-color: rgb(110, 129, 145);
-}

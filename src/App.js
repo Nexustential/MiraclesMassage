@@ -4,7 +4,6 @@ import About from "./Pages/About";
 import Home from "./Pages/Home";
 import ServicesPage from "./Pages/ServicesPage";
 
-
 const App = () => {
   return (
     <div>
