@@ -8,10 +8,17 @@ const NavBar = () => {
     fontSize: "1.3em",
     color: "white",
     fontWeight: "bold",
+    textDecoration: "none",
+    transitionDuration: "450ms",
+    transitionProperty: "color, fontSize",
   };
   let activeStyle = {
-    textDecoration: "underline",
-    color: "red",
+    textDecoration: "none",
+    transitionDuration: "450ms",
+    transitionProperty: "color, fontSize",
+    fontSize: "1.6em",
+    fontWeight: "bold",
+    color: "black",
   };
   let logoStyle = {
     paddingTop: "10px",
@@ -21,25 +28,29 @@ const NavBar = () => {
     <nav className="navBar">
       <MobileMenu />
       <div>
-        <a href="/">
+        <NavLink to="/">
           <img src={Logo} style={logoStyle} width={220} height={80} />
-        </a>
+        </NavLink>
       </div>
       <nav className="links">
-        <NavLink style={linksStyle} to="/">
-          <div className="navTab">
-            Home
-          </div>
+        <NavLink
+          style={({ isActive }) => (isActive ? activeStyle : linksStyle)}
+          to="/"
+          end
+        >
+          <div className="navTab">Home</div>
         </NavLink>
-        <NavLink style={linksStyle} to="/services">
-          <div className="navTab">
-            Services
-          </div>
+        <NavLink
+          style={({ isActive }) => (isActive ? activeStyle : linksStyle)}
+          to="/services"
+        >
+          <div className="navTab">Services</div>
         </NavLink>
-        <NavLink style={linksStyle} to="/about">
-          <div className="navTab">
-            About
-          </div>
+        <NavLink
+          style={({ isActive }) => (isActive ? activeStyle : linksStyle)}
+          to="/about"
+        >
+          <div className="navTab">About</div>
         </NavLink>
       </nav>
     </nav>
