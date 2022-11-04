@@ -23,21 +23,22 @@
   background: rgb(108, 132, 161);
   opacity: 0.9;
   overflow-x: hidden;
-  transition-property: width;
+  transition-property: width, box-shadow;
   transition-duration: 350ms;
   transition-timing-function: ease-in;
 }
 
 .showContent {
   width: 80%;
+  box-shadow: 0px 0px 90px 40px black;
 }
 
 .overlayContent {
   text-decoration: none;
   position: relative;
-  top: 30%;
+  top: 25%;
   width: 100%;
-  text-align: center;
+  left: 31%;
   margin-top: 30px;
   color: white;
   font-size: 2.3em;
@@ -46,4 +47,11 @@
 .overlayContent:hover {
   color: white;
   cursor: pointer;
+}
+
+.homeIcon {
+  position: relative;
+  top: -5px;
+  left: -3px;
+  font-size: 0.8em;
 }

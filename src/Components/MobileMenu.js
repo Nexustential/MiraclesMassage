@@ -24,18 +24,25 @@ const MobileMenu = () => {
       </div>
       <nav className={`overlay ${isOpen && "showContent"}`}>
         <NavLink onClick={closeNavbar} className="overlayContent" to="/">
-          <BiHome /> Home
+          <span className="homeIcon">
+            <BiHome />
+          </span>
+          Home
         </NavLink>
         <NavLink
           onClick={closeNavbar}
           className="overlayContent"
           to="/services"
         >
-          <AiFillShopping />
+          <span className="homeIcon">
+            <AiFillShopping />
+          </span>
           Services
         </NavLink>
         <NavLink onClick={closeNavbar} className="overlayContent" to="/about">
-          <BsGlobe2 />
+          <span className="homeIcon">
+            <BsGlobe2 />
+          </span>
           About
         </NavLink>
       </nav>
