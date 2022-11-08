@@ -1,67 +1,155 @@
-import React from 'react';
-// import Button from 'react-bootstrap/Button';
-// import Form from 'react-bootstrap/Form';
-// import Modal from 'react-bootstrap/Modal';
-import "../Styles/BookForm.css";
-
-// function BookForm() {
-//   const [show, setShow] = useState(false);
-
-//   const handleClose = () => setShow(false);
-//   const handleShow = () => setShow(true);
-
-//   return (
-//     <div className='buttonDiv'>
-//       <Button variant="primary" id="button" onClick={handleShow}>
-//         Book Online
-//       </Button>
-
-//       <Modal show={show} onHide={handleClose}>
-//         <Modal.Header closeButton>
-//           <Modal.Title>Book Appointment</Modal.Title>
-//         </Modal.Header>
-//         <Modal.Body>
-//           <Form>
-//             <Form.Group className="mb-3" controlId="BookingForm.ControlInput1">
-//               <Form.Label>Email address</Form.Label>
-//               <Form.Control
-//                 type="email"
-//                 placeholder="name@example.com"
-//                 autoFocus
-//               />
-//             </Form.Group>
-//             <Form.Group
-//               className="mb-3"
-//               controlId="exampleForm.ControlTextarea1"
-//             >
-//               <Form.Label>Name</Form.Label>
-//               <Form.Control as="textarea" rows={1} />
-//             </Form.Group>
-//             <Form.Group
-//               className="mb-3"
-//               controlId="exampleForm.ControlTextarea2"
-//             >
-//               <Form.Label>Service Type</Form.Label>
-//               <Form.Control as="textarea" rows={1} />
-//             </Form.Group>
-//           </Form>
-//         </Modal.Body>
-//         <Modal.Footer>
-//           <Button variant="secondary" onClick={handleClose}>
-//             Close
-//           </Button>
-//           <Button variant="primary" onClick={handleClose}>
-//             Submit
-//           </Button>
-//         </Modal.Footer>
-//       </Modal>
-//     </div>
-//   );
-// }
+import React, { useState, useRef } from 'react';
+import Button from 'react-bootstrap/Button';
+import Modal from 'react-bootstrap/Modal';
+import '../Styles/BookForm.css';
+import emailjs from '@emailjs/browser';
 
 function BookForm() {
+  const [show, setShow] = useState(false);
+
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
+
+  //emailjs
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        process.env.REACT_APP_SERVICE_ID,
+        process.env.REACT_APP_TEMPLATE_ID,
+        form.current,
+        process.env.REACT_APP_PUBLIC_KEY
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+  };
+
   return (
-    <div className="container" id="bookFormDiv">
+    <div className='buttonDiv text-center'>
+      <Button
+        className='size-lg'
+        variant='primary'
+        id='button'
+        onClick={handleShow}
+      >
+        Book Online
+      </Button>
+
+      <Modal
+        show={show}
+        onHide={handleClose}
+      >
+        <Modal.Header closeButton>
+          <Modal.Title className='ms-auto'>Book Appointment</Modal.Title>
+        </Modal.Header>
+        <Modal.Body>
+          <div
+            className='container'
+            id='bookFormDiv'
+          >
+            <form
+              ref={form}
+              onSubmit={sendEmail}
+            >
+              <label>Name:</label>
+              <input
+                className='col-10'
+                type='text'
+                name='user_name'
+              />
+              <label>Email:</label>
+              <input
+                type='email'
+                name='user_email'
+              />
+              <label>Date:</label>
+              <input
+                type='date'
+                name='user_date'
+              />
+              <label>Time:</label>
+              <input
+                type='time'
+                name='user_time'
+              />
+              <label className='col-2'>Service:</label>
+              <input
+                className='col'
+                type='radio'
+                name='service_type'
+                id='swedishRadio'
+                value='Swedish'
+              />
+              <label
+                className='col-2'
+                for='swedishRadio'
+              >
+                Swedish
+              </label>
+              <input
+                className='col'
+                type='radio'
+                name='service_type'
+                id='thaiRadio'
+                value='Thai'
+              />
+              <label
+                className='col-2'
+                for='thaiRadio'
+              >
+                Thai
+              </label>
+              <input
+                className='col'
+                type='radio'
+                name='service_type'
+                id='deepTissueRadio'
+                value='DeepTissue'
+              />
+              <label
+                className='col-2'
+                for='deepTissueRadio'
+              >
+                Deep Tissue
+              </label>
+              <label>Message:</label>
+              <textarea
+                className='col-8'
+                name='message'
+              />
+              <input
+                type='submit'
+                value='Send'
+              />
+            </form>
+          </div>
+        </Modal.Body>
+        <Modal.Footer>
+          <Button
+            variant='secondary'
+            onClick={handleClose}
+          >
+            Close
+          </Button>
+        </Modal.Footer>
+      </Modal>
+    </div>
+  );
+}
+
+export default BookForm;
+
+{
+  /* <div className="container" id="bookFormDiv">
       <form action="https://formsubmit.co/RCLewis369@outlook.com" method="POST" className='row'>
         <h2 id="formH1">Book An Appointment</h2>
         <input className="col-12" type="email" name="Email" placeholder="Email" required />
@@ -89,8 +177,5 @@ function BookForm() {
         
         <button className='col-6' type="submit">Send</button>
       </form>
-    </div>
-  )
+    </div> */
 }
-
-export default BookForm;
