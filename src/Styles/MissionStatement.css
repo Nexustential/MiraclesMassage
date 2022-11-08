@@ -12,12 +12,12 @@
 
 .missionStatement p {
   margin: 2em;
-  margin-bottom: 0px;
-  padding-bottom: 2em;
+  padding-bottom: 1em;
   width: auto;
   max-width: 1000px;
   display: inline-block;
-  font-size: large;
+  font-size: 19px;
+  font-family: sans-serif;
 }
 
 .missionStatement h1 {

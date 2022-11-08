@@ -25,7 +25,7 @@ $activeGrey: rgb(115, 142, 165);
 .services1 {
     max-width: 2000px;
     min-width: 414px;
-    max-height: 1600px;
+    max-height: 1760px;
     height: auto;
     width: auto;
     margin: auto;
@@ -47,10 +47,18 @@ $activeGrey: rgb(115, 142, 165);
 
 .services1 .serviceCards {
     max-height: 550px;
+    max-width: 19rem;
     margin: auto;
     width: auto;
-    max-width: 19rem;
     height: auto;
+    margin-bottom: 2em;
+    font-family: sans-serif;
+}
+
+.services1 .cardTitle {
+    font-family: Century Gothic;
+    font-size: 25px;
+    padding-bottom: 15px;
 }
   
 .services1 .bookButton {
@@ -71,24 +79,14 @@ $activeGrey: rgb(115, 142, 165);
     margin-bottom: 5px;
 }
   
-.services1 .servicesButton {
-    color: black;
-    background-color: $activeGrey;
-    width: auto;
-    min-width: 400px;
-    max-width: 980px;
-    box-shadow: 3px 3px;
-    margin: 7px;
-    margin-bottom: 14px;
+.bookFormButton {
+    display: none;
 }
-  
-  
-.services1 .servicesButton:hover {
-    box-shadow: none;
+
+.bookFormButton1 {
+    display: none;
 }
-  
-  
-.services1 .servicesButton:active {
-    box-shadow: none;
+
+.bookFormButton2 {
+    display: none;
 }
-  
