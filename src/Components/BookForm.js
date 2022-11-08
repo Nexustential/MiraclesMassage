@@ -26,6 +26,7 @@ function BookForm() {
       .then(
         (result) => {
           console.log(result.text);
+          e.target.reset(); //should reset the form after submission 
         },
         (error) => {
           console.log(error.text);
@@ -60,76 +61,67 @@ function BookForm() {
               ref={form}
               onSubmit={sendEmail}
             >
-              <label>Name:</label>
-              <input
-                className='col-10'
+              <div className="row pt-5 mx-auto">
+                <div className="col-8 form-group mx-auto">
+                <input
+                className='form-control'
                 type='text'
+                placeholder="Name"
                 name='user_name'
               />
-              <label>Email:</label>
+                </div>
+              <div className="col-8 form-group pt-2 mx-auto">
               <input
                 type='email'
+                className="form-control"
+                placeholder="Email Address"
                 name='user_email'
               />
-              <label>Date:</label>
-              <input
+              </div>
+             <div className="col-8 form-group pt-2 mx-auto">
+             <input
                 type='date'
+                className="form-control"
                 name='user_date'
               />
-              <label>Time:</label>
+             </div>
+              <div className="col-8 form-group pt-2 mx-auto">
               <input
                 type='time'
+                className="form-control"
                 name='user_time'
               />
-              <label className='col-2'>Service:</label>
-              <input
-                className='col'
-                type='radio'
+              </div>
+              <div className="col-8 form-group pt-2 mx-auto">
+              <select
+                className='form-select'
+                //type='select'
                 name='service_type'
-                id='swedishRadio'
-                value='Swedish'
-              />
-              <label
-                className='col-2'
-                for='swedishRadio'
-              >
-                Swedish
-              </label>
-              <input
-                className='col'
-                type='radio'
-                name='service_type'
-                id='thaiRadio'
-                value='Thai'
-              />
-              <label
-                className='col-2'
-                for='thaiRadio'
-              >
-                Thai
-              </label>
-              <input
-                className='col'
-                type='radio'
-                name='service_type'
-                id='deepTissueRadio'
-                value='DeepTissue'
-              />
-              <label
-                className='col-2'
-                for='deepTissueRadio'
-              >
-                Deep Tissue
-              </label>
-              <label>Message:</label>
-              <textarea
-                className='col-8'
-                name='message'
-              />
-              <input
+                //value='Select a Service'
+              > 
+              <option>Select a Service...</option>
+              <option value="Swedish">Swedish</option>
+              <option value="Thai">Thai</option>
+              <option value="deepTissue">Deep Tissue</option>
+              <option value="sports">Sports</option>
+              <option value="structural">Structural</option>
+              <option value="triggerPoint">Trigger Point</option>
+              </select>
+              </div>
+              <div className="col-8 form-group pt-2 mx-auto">
+                <textarea className="form-control" cols="30" rows="6" placeholder="Comments" name="message"></textarea>
+              </div>
+             <div className="col-8 pt-3 text-center mx-auto">
+             <input
                 type='submit'
+                className="btn btn-info"
                 value='Send'
+                onClick={handleClose}
               />
+             </div>
+             
+             
+              </div>
             </form>
           </div>
         </Modal.Body>
