@@ -36,7 +36,7 @@ function ServiceCards(){
     {
       Image: require("../images/structural.jpg"),
       title: "STRUCTURAL",
-      text: "What is a structural massage? Structural massage is a non-invasive technique that identifies the source of pain based on structural imbalances and uses body positioning to relieve tension. When you go in for a structural massage session, a professional will identify the cause of your pain by locating a tender spot",
+      text: "What is a structural massage? Structural massage is a non-invasive technique that identifies the source of pain based on structural imbalances and uses body positioning to relieve tension. When you go in for a structural massage session, a professional will identify the cause of your pain by locating a tender spot.",
       price: "60 min: $80 | 90 min: $120"
     },
     {

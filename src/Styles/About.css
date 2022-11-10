@@ -20,6 +20,16 @@
 
  .img-large {
     max-width: 100%;
-    height: 150px;
+    height: 275px;
+ }
+
+ #testimonialsHeader {
+   font-family: Century Gothic;
+   font-weight: bold;
+ }
+
+ #aboutParagraph {
+   font-size: large;
+   font-style: italic;
  }
 
