@@ -18,7 +18,7 @@ import { Fade } from "react-reveal";
 
 function About() {
   return (
-    <div>
+    <div style={{ backgroundColor: "darkgray" }}>
       <Fade distance="70%" duration={1000}>
         <Container className="profile">
           <Row className="justify-content-center">
@@ -38,11 +38,15 @@ function About() {
                     >
                       <h1>Luis Mujica</h1>
                     </ListGroup.Item>
-                    <ListGroup.Item>
+                    <ListGroup.Item 
+                      style={{ backgroundColor: "rgb(241, 241, 241)" }}
+                    >
                       <h5>LMT</h5>
                     </ListGroup.Item>
-                    <ListGroup.Item>
-                      <p>B.S. Health Sciences - UCF</p>
+                    <ListGroup.Item
+                      style={{ backgroundColor: "rgb(241, 241, 241)" }}
+                    >
+                      <p style={{ fontWeight: "600" }}>B.S. Health Sciences - UCF</p>
                     </ListGroup.Item>
                   </ListGroup>
                 </Card>
@@ -72,10 +76,10 @@ function About() {
           </MDBRow>
         </MDBContainer>
 
-        <MDBContainer className="my-5 pb-5" style={{ backgroundColor: "grey" }}>
+        <MDBContainer className="my-5 pb-5" id="testimonialContainer" style={{ backgroundColor: "grey" }}>
           <MDBRow className="d-flex justify-content-center">
             <MDBCol md="10" xl="8" className="text-center">
-              <h2 className="mb-4 my-5" id="testimonialsHeader">Testimonials</h2>
+              <h2 className="mb-4 my-5" style={{fontFamily: "Century Gothic"}}>TESTIMONIALS</h2>
               <p className="mb-4 pb-2 mb-md-5 pb-md-0" id="testimonialsHeader">
                 See what our clients have to say!
               </p>

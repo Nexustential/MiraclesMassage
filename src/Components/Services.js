@@ -14,23 +14,30 @@ function Services() {
   const [call, setCall] = useState("")
   const [call1, setCall1] = useState("")
   const [call2, setCall2] = useState("")
+
+  const [callNow, setCallNow] = useState("Call Now");
+  const [callNow1, setCallNow1] = useState("Call Now");
+  const [callNow2, setCallNow2] = useState("Call Now");
   
-  const callPrompt = ("Book online or call us today at:");
+  const callPrompt = ("Book Online Or Call Us Any Time!");
   const phoneNumber = ('214-748-3647');
 
   function CallUs(){
+    bookButtonVanish();
     bookingPopUp();
     setBook(`${phoneNumber}`);
     setCall(`${callPrompt}`);
   }
 
   function CallUs1(){
+    bookButtonVanish1();
     bookingPopUp1();
     setBook1(`${phoneNumber}`);
     setCall1(`${callPrompt}`);
   }
 
   function CallUs2(){
+    bookButtonVanish2();
     bookingPopUp2();
     setBook2(`${phoneNumber}`);
     setCall2(`${callPrompt}`);
@@ -49,6 +56,21 @@ function Services() {
   function bookingPopUp2(){
     const element = document.querySelector('.bookFormButton2');
     element.style.display = 'contents';
+  }
+
+  function bookButtonVanish(){
+    const element = document.querySelector('.bookButton');
+    element.style.display = 'none';
+  }
+
+  function bookButtonVanish1(){
+    const element = document.querySelector('.bookButton1');
+    element.style.display = 'none';
+  }
+
+  function bookButtonVanish2(){
+    const element = document.querySelector('.bookButton2');
+    element.style.display = 'none';
   }
 
   return (
@@ -76,6 +98,9 @@ function Services() {
             </Button>
             <div className="bookFormButton">
               <BookForm />
+              <Button variant="secondary" href="tel:+2147483647" className="callButton" onClick={() => setCallNow(`${phoneNumber}`)}>
+                {callNow}
+              </Button>
             </div>
           </Card.Body>
         </Card>
@@ -92,13 +117,16 @@ function Services() {
             </div>
             <Button 
               variant="secondary" 
-              className="bookButton"
+              className="bookButton1"
               onClick={CallUs1}
             >
               {book1}
             </Button>
             <div className="bookFormButton1">
               <BookForm />
+              <Button variant="secondary" href="tel:+2147483647" className="callButton" onClick={() => setCallNow1(`${phoneNumber}`)}>
+                {callNow1}
+              </Button>
             </div>
           </Card.Body>
         </Card>
@@ -115,13 +143,16 @@ function Services() {
             </div>
             <Button 
               variant="secondary" 
-              className="bookButton"
+              className="bookButton2"
               onClick={CallUs2}
             >
               {book2}
             </Button>
             <div className="bookFormButton2">
               <BookForm />
+              <Button variant="secondary" href="tel:+2147483647" className="callButton" onClick={() => setCallNow2(`${phoneNumber}`)}>
+                {callNow2}
+              </Button>
             </div>
           </Card.Body>
         </Card>

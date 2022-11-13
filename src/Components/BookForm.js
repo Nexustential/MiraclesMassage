@@ -38,7 +38,7 @@ function BookForm() {
     <div className='buttonDiv text-center'>
       <Button
         className='size-lg'
-        variant='primary'
+        variant='secondary'
         id='button'
         onClick={handleShow}
       >
