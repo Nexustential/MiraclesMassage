@@ -66,13 +66,17 @@ $activeGrey: rgb(115, 142, 165);
     background-color: $bg-color;
     margin-bottom: 7px;
 }
-  
-.services1 {
-    
-    .bookButton:hover {
-        font-weight: 700;
-        background-color: $activeGrey;
-    }
+
+.services1 .bookButton1 {
+    color: black;
+    background-color: $bg-color;
+    margin-bottom: 7px;
+}
+
+.services1 .bookButton2 {
+    color: black;
+    background-color: $bg-color;
+    margin-bottom: 7px;
 }
   
 .callHook {
@@ -90,4 +94,8 @@ $activeGrey: rgb(115, 142, 165);
 
 .bookFormButton2 {
     display: none;
+}
+
+.callButton {
+    margin-top: 5px;
 }
