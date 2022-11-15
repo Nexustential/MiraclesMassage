@@ -50,7 +50,7 @@ function BookForm() {
         onHide={handleClose}
       >
         <Modal.Header closeButton>
-          <Modal.Title className='ms-auto'>Book Appointment</Modal.Title>
+          <Modal.Title className='ms-auto' id="bookFormTitle">Book Appointment</Modal.Title>
         </Modal.Header>
         <Modal.Body>
           <div

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Card, Button} from "react-bootstrap";
 import "../Styles/ServicesPage.css";
-import Price from "../Components/PricingForServicesPage";
+import ServicesBanner from "../Components/ServicesBanner";
 import { Fade } from "react-reveal";
 import BookForm from "../Components/BookForm";
 
@@ -75,11 +75,14 @@ function ServiceCards(){
                   {card.price}
                 </div>
               </Card.Text>
-              <Button href="tel:+2147483647" variant="secondary" className="servicesButtonStyle" onClick={() => handleButtonClick(index)}>
-                <div className="bookButton">
-                {bookButtons[index] ? "214-748-3647" : "BOOK NOW"}
-                </div>
-              </Button>
+              <div id="servicesButtonGroup">
+                <BookForm />
+                <Button href="tel:+2147483647" variant="secondary" className="servicesButtonStyle" onClick={() => handleButtonClick(index)}>
+                  <div className="bookServicesButton">
+                  {bookButtons[index] ? "214-748-3647" : "Call Now"}
+                  </div>
+                </Button>
+              </div>
             </div>
           </Card.Body>
         </Card>
@@ -100,9 +103,8 @@ function ServicesPage() {
 
   return (
   <div className="servicesPage">
-      <Price />
+      <ServicesBanner />
       <ServiceCards />
-      <BookForm />
   </div>
   )
 }
