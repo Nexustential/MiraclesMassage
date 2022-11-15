@@ -1,0 +1,27 @@
+.footerSection {
+    background: rgb(110, 129, 145);
+    color: aliceblue;
+}
+.MakeAppintment {
+    text-align: center;
+    padding: 4%;
+}
+.TermsAndConditions {
+    padding: 1%;
+    text-align: center;
+}
+.iconsection{
+    padding: 2%;
+    font-size: 2rem;
+    text-align: right;
+}
+.Icon{
+    padding: 1%;
+}
+.openDaysAndTime{
+    text-align: right;
+    padding-right: 4%;
+}
+.infoAddress{
+    padding-left: 4%;
+}

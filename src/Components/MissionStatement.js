@@ -1,8 +1,10 @@
 import React from "react";
 import "../Styles/MissionStatement.css";
+import { Fade } from "react-reveal";
 
 const Mission = () => {
   return (
+    <Fade duration={3000}>
     <div className="missionStatement">
       <br />
       <h1>BREATHE. MOVE. CONNECT.</h1>
@@ -12,6 +14,7 @@ const Mission = () => {
       In your first session, we provide a free functional exam to figure out your personalized therapeutic needs. This helps us plan our goals and focus for each session together. I look forward to helping start your healing journey.
       </p>
     </div>
+    </ Fade>
   );
 };
 
