@@ -4,6 +4,7 @@ import "../Styles/ServicesPage.css";
 import ServicesBanner from "../Components/ServicesBanner";
 import { Fade } from "react-reveal";
 import Footer from "../Components/Footer";
+import BookForm from "../Components/BookForm";
 
 
 function ServiceCards(){
@@ -104,8 +105,6 @@ function ServicesPage() {
   <div className="servicesPage">
       <ServicesBanner />
       <ServiceCards />
-    
-      <Footer />
   </div>
   )
 }
