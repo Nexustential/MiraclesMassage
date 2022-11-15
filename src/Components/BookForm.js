@@ -35,7 +35,7 @@ function BookForm() {
   };
 
   return (
-    <div className='buttonDiv text-center'>
+    <div className='buttonDiv'>
       <Button
         className='size-lg'
         variant='secondary'

@@ -1,10 +1,13 @@
 import React from "react";
 import "../Styles/Carousel.css";
 import Carousel from "react-bootstrap/Carousel";
+import { Fade } from "react-reveal";
 
 const CarouselFade = () => {
   return (
+   
     <div className="carousel-container">
+      <Fade duration={1000}>
       <Carousel className="carousel" variant="light">
         <Carousel.Item interval={4000}>
           <img
@@ -43,7 +46,9 @@ const CarouselFade = () => {
           </Carousel.Caption>
         </Carousel.Item>
       </Carousel>
+      </Fade>
     </div>
+   
   );
 };
 

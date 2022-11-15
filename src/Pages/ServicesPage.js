@@ -3,8 +3,7 @@ import { Card, Button} from "react-bootstrap";
 import "../Styles/ServicesPage.css";
 import Price from "../Components/PricingForServicesPage";
 import { Fade } from "react-reveal";
-import BookForm from "../Components/BookForm";
-
+import Footer from "../Components/Footer";
 
 
 function ServiceCards(){
@@ -102,7 +101,8 @@ function ServicesPage() {
   <div className="servicesPage">
       <Price />
       <ServiceCards />
-      <BookForm />
+    
+      <Footer />
   </div>
   )
 }
