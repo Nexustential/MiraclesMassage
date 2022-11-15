@@ -18,14 +18,14 @@ import { Fade } from "react-reveal";
 
 function About() {
   return (
-    <div>
+    <div style={{ backgroundColor: "darkgray" }}>
       <Fade distance="70%" duration={1000}>
         <Container className="profile">
           <Row className="justify-content-center">
             <Col xs="auto">
               <img
                 className="img-large"
-                src={require("../images/elmo.png")}
+                src={require("../images/luisPic.jpg")}
                 alt=""
               ></img>
             </Col>
@@ -38,11 +38,15 @@ function About() {
                     >
                       <h1>Luis Mujica</h1>
                     </ListGroup.Item>
-                    <ListGroup.Item>
+                    <ListGroup.Item 
+                      style={{ backgroundColor: "rgb(241, 241, 241)" }}
+                    >
                       <h5>LMT</h5>
                     </ListGroup.Item>
-                    <ListGroup.Item>
-                      <p>B.S. Health Sciences - VCF</p>
+                    <ListGroup.Item
+                      style={{ backgroundColor: "rgb(241, 241, 241)" }}
+                    >
+                      <p style={{ fontWeight: "600" }}>B.S. Health Sciences - UCF</p>
                     </ListGroup.Item>
                   </ListGroup>
                 </Card>
@@ -54,7 +58,7 @@ function About() {
         <MDBContainer className="my-5">
           <MDBRow className="d-flex justify-content-center">
             <MDBCol md="10" xl="8" className="text-center">
-              <p className="mb-4 pb-2 mb-md-5 pb-md-0">
+              <p className="mb-4 pb-2 mb-md-5 pb-md-0" id="aboutParagraph">
                 I became a massage therapist to live a pain-free and more active
                 lifestyle. I knew this could be accomplished by retraining my
                 mind-body connection in order to improve functional movement.
@@ -72,12 +76,12 @@ function About() {
           </MDBRow>
         </MDBContainer>
 
-        <MDBContainer className="my-5 pb-5" style={{ backgroundColor: "grey" }}>
+        <MDBContainer className="my-5 pb-5" id="testimonialContainer" style={{ backgroundColor: "grey" }}>
           <MDBRow className="d-flex justify-content-center">
             <MDBCol md="10" xl="8" className="text-center">
-              <h2 className="mb-4 my-5">Testimonials</h2>
-              <p className="mb-4 pb-2 mb-md-5 pb-md-0">
-                Lorem Ipsum about massaging
+              <h2 className="mb-4 my-5" style={{fontFamily: "Century Gothic"}}>TESTIMONIALS</h2>
+              <p className="mb-4 pb-2 mb-md-5 pb-md-0" id="testimonialsHeader">
+                See what our clients have to say!
               </p>
             </MDBCol>
           </MDBRow>
@@ -91,18 +95,17 @@ function About() {
                 ></div>
                 <div className="avatar mx-auto bg-white">
                   <MDBCardImage
-                    src={require("../images/elmo.png")}
+                    src={require("../images/johannahGladwin.jpg")}
                     className="rounded-circle img-fluid"
                     alt=""
                   />
                 </div>
                 <MDBCardBody>
-                  <h4 className="mb-4">John Denver</h4>
+                  <h4 className="mb-4">Johannah Gladwin</h4>
                   <hr />
                   <p className="dark-grey-text mt-4">
                     <MDBIcon fas icon="quote-left" className="pe-2" />
-                    Neque cupiditate assumenda in maiores repudi mollitia
-                    architecto.
+                    As a nurse, I'm on my feet all day. I didn't know how much of a difference a Thai massage would make towards improving my life until I came to Miracles Massage. Thanks Luis!
                   </p>
                 </MDBCardBody>
               </MDBCard>
@@ -115,18 +118,17 @@ function About() {
                 ></div>
                 <div className="avatar mx-auto bg-white">
                   <MDBCardImage
-                    src={require("../images/elmo.png")}
+                    src={require("../images/theoNiles.jpg")}
                     className="rounded-circle img-fluid"
                     alt=""
                   />
                 </div>
                 <MDBCardBody>
-                  <h4 className="mb-4">Lisa Cudrow</h4>
+                  <h4 className="mb-4">Theo Niles</h4>
                   <hr />
                   <p className="dark-grey-text mt-4">
                     <MDBIcon fas icon="quote-left" className="pe-2" />
-                    Neque cupiditate assumenda in maiores repudi mollitia
-                    architecto.
+                    My coach advised me to begin sports therapy so that I could stay in the best physical shape possible after intense workouts and games, so I went to Miracles & Luis did not disappoint!
                   </p>
                 </MDBCardBody>
               </MDBCard>
@@ -139,18 +141,17 @@ function About() {
                 ></div>
                 <div className="avatar mx-auto bg-white">
                   <MDBCardImage
-                    src={require("../images/elmo.png")}
+                    src={require("../images/joniSutton.jpg")}
                     className="rounded-circle img-fluid"
                     alt=""
                   />
                 </div>
                 <MDBCardBody>
-                  <h4 className="mb-4">John Smith</h4>
+                  <h4 className="mb-4">Joni Sutton</h4>
                   <hr />
                   <p className="dark-grey-text mt-4">
                     <MDBIcon fas icon="quote-left" className="pe-2" />
-                    Delectus impedit saepe officiis ab aliquam repellat rem unde
-                    ducimus.
+                    I spend my entire work day sitting in my office and I started having sharp back pains from bad posture. I scheduled a trigger point massage with Luis and now my back feels amazing!
                   </p>
                 </MDBCardBody>
               </MDBCard>

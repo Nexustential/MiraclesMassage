@@ -6,11 +6,9 @@ import { Fade } from "react-reveal";
 const Home = () => {
   return (
     <>
-      <Fade distance="70%" duration={1000}>
         <CarouselFade />
         <Mission />
         <Services />
-      </Fade>
     </>
   );
 };

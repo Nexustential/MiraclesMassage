@@ -13,6 +13,27 @@
   z-index: 0;
 }
 
-#carouselCaption2 {
-  color: black;
+#carouselDiv {
+  background-color: black;
+}
+
+#carouselCaptionWhite {
+  background: rgba(34, 34, 34, 0.35);
+  border-radius: 15px;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+@media (max-width: 500px) {
+
+  #carouselCaptionWhite {
+    font-size: medium;
+    padding: 1%;
+    margin: -2%;
+  }
+
+  .carouselCaptionHeader {
+    font-size: large;
+  }
+
 }

@@ -2,7 +2,6 @@ import "../Styles/NavBar.css";
 import Logo from "../logos/logoMiracles.png";
 import { NavLink } from "react-router-dom";
 import MobileMenu from "./MobileMenu";
-
 const NavBar = () => {
   let linksStyle = {
     fontSize: "1.3em",

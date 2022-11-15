@@ -3,7 +3,7 @@
   position: absolute;
   right: 10px;
   top: 15px;
-  z-index: 2;
+  z-index: 4;
 }
 
 @media screen and (max-width: 600px) {
@@ -18,14 +18,14 @@
   height: 100%;
   width: 0%;
   position: fixed;
-  z-index: 1;
+  z-index: 2;
   right: 0;
   background: rgb(108, 132, 161);
   opacity: 0.9;
   overflow-x: hidden;
   transition-property: width, box-shadow;
-  transition-duration: 350ms;
-  transition-timing-function: ease-in;
+  transition-duration: 300ms;
+  transition-timing-function: linear;
 }
 
 .showContent {
@@ -34,6 +34,9 @@
 }
 
 .overlayContent {
+  z-index: 2;
+  display: flex;
+  flex-wrap: nowrap;
   text-decoration: none;
   position: relative;
   top: 25%;
@@ -51,7 +54,7 @@
 
 .homeIcon {
   position: relative;
-  top: -5px;
+  top: 2px;
   left: -3px;
   font-size: 0.8em;
 }

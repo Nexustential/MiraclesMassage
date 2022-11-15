@@ -11,6 +11,7 @@
 .servicesPage1 .servicesImageStyle {
   border: 0;
   border-radius: 0%;
+  padding-bottom: 6em;
 }
 
 .servicesPage1 .servicesTextStyleForCard {
@@ -25,6 +26,7 @@
   font-size: 2rem;
   font-family: Century Gothic;
   padding-bottom: 30px;
+  text-align: center;
 }
 
 @media (min-width: 1000px) {
@@ -38,15 +40,19 @@
   }
 }
 
+
+@media (max-width: 500px) {
+  .servicesPage1 .servicesImageStyle {
+    padding-bottom: 25px;
+  }
+}
+
 .servicesPage1 .servicesButtonStyle {
-  background-color: rgb(61, 61, 61);
-  border: 0;
-  border-radius: 0%;
   width: 980px auto;
   margin: 7px; 
 }
 
-.pricingBanner .titleForPricing {
+.titleForServices {
   text-align: center;
   font-family: Century Gothic;
   padding-top: 15px;
@@ -56,8 +62,13 @@
 .price {
   font-family: Century gothic;
   font-weight: bold;
+  text-align: center;
 }
 
-.bookButton:hover {
+.bookServicesButton:hover {
   font-weight: bold;
+}
+
+#servicesButtonGroup {
+  text-align: center;
 }
