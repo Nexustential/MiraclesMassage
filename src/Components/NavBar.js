@@ -28,7 +28,7 @@ const NavBar = () => {
       <MobileMenu />
       <div>
         <NavLink to="/">
-          <img src={Logo} style={logoStyle} width={220} height={80} />
+          <img src={Logo} style={logoStyle} width={220} height={80} alt="Miracles Massage Logo" />
         </NavLink>
       </div>
       <nav className="links">
