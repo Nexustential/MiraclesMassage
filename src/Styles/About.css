@@ -36,3 +36,7 @@
   font-style: italic;
 }
 
+#testimonialContainer {
+  border: solid 6px rgb(115, 142, 165);
+  border-radius: 5px;
+}

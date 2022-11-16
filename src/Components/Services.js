@@ -3,7 +3,7 @@ import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
 import "../Styles/Services.scss";
 import BookForm from "./BookForm";
-
+import { Fade } from "react-reveal";
 
 function Services() {
   
@@ -74,11 +74,13 @@ function Services() {
   }
 
   return (
+    
     <div className="services">
       <div className="serviceCardHeader">
         <h1>Our Most Popular Services</h1>
       </div>
       <div className="services1">
+      <Fade duration={1000}>
         <Card className="serviceCards">
           <Card.Img variant="top" src={require("../images/swedish.jpg")} />
           <Card.Body>
@@ -156,8 +158,10 @@ function Services() {
             </div>
           </Card.Body>
         </Card>
+        </Fade>
       </div>
     </div>
+    
   );
 };
 

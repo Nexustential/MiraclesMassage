@@ -22,3 +22,18 @@
     max-height: auto;
     background-color: darkgray;
 }
+
+.invalid {
+    border: 2px solid red !important;
+  }
+  
+  .valid {
+    border: 2px solid rgb(13, 145, 25) !important;
+  }
+  
+  input, textarea {
+    outline: none !important;
+    box-shadow: none !important;
+  }
+
+
