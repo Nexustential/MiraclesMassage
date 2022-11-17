@@ -39,12 +39,12 @@ function About() {
                       <h1>Luis Mujica</h1>
                     </ListGroup.Item>
                     <ListGroup.Item 
-                      style={{ backgroundColor: "rgb(241, 241, 241)" }}
+                      style={{ backgroundColor: "rgb(241, 241, 241)", paddingBottom: "0px" }}
                     >
                       <h5>LMT</h5>
                     </ListGroup.Item>
                     <ListGroup.Item
-                      style={{ backgroundColor: "rgb(241, 241, 241)" }}
+                      style={{ backgroundColor: "rgb(241, 241, 241)", paddingBottom: "0px" }}
                     >
                       <p style={{ fontWeight: "600" }}>B.S. Health Sciences - UCF</p>
                     </ListGroup.Item>
@@ -79,10 +79,10 @@ function About() {
         <MDBContainer className="my-5 pb-5" id="testimonialContainer" style={{ backgroundColor: "grey" }}>
           <MDBRow className="d-flex justify-content-center">
             <MDBCol md="10" xl="8" className="text-center">
-              <h2 className="mb-4 my-5" style={{fontFamily: "Century Gothic"}}>TESTIMONIALS</h2>
-              <p className="mb-4 pb-2 mb-md-5 pb-md-0" id="testimonialsHeader">
+              <h1 className="mb-4 my-5" style={{fontFamily: "Century Gothic"}}>TESTIMONIALS</h1>
+              <h3 className="mb-4 pb-2 mb-md-5 pb-md-0" id="testimonialsHeader">
                 See what our clients have to say!
-              </p>
+              </h3>
             </MDBCol>
           </MDBRow>
 

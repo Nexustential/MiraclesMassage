@@ -80,7 +80,7 @@ function Services() {
         <h1>Our Most Popular Services</h1>
       </div>
       <div className="services1">
-      <Fade duration={1000}>
+        <Fade duration={1000}>
         <Card className="serviceCards">
           <Card.Img variant="top" src={require("../images/swedish.jpg")} />
           <Card.Body>

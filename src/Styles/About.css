@@ -14,7 +14,7 @@
 }
 
 .profile {
-  padding-top: 50px;
+  padding-top: 4rem;
   padding-bottom: 3rem;
 }
 
@@ -26,9 +26,7 @@
 
 #testimonialsHeader {
   font-family: Century Gothic;
-  font-weight: bold;
   text-transform: capitalize;
-  font-size: large;
 }
 
 #aboutParagraph {
