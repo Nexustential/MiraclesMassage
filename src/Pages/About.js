@@ -18,7 +18,7 @@ import { Fade } from "react-reveal";
 
 function About() {
   return (
-    <div style={{ backgroundColor: "darkgray" }}>
+    <div style={{ backgroundColor: "darkgray", paddingBottom: "10px" }}>
       <Fade distance="70%" duration={1000}>
         <Container className="profile">
           <Row className="justify-content-center">
@@ -36,7 +36,7 @@ function About() {
                     <ListGroup.Item
                       style={{ backgroundColor: "rgb(115, 142, 165)" }}
                     >
-                      <h1>Luis Mujica</h1>
+                      <h1 style={{ fontFamily: "Century Gothic" }}>Luis Mujica</h1>
                     </ListGroup.Item>
                     <ListGroup.Item 
                       style={{ backgroundColor: "rgb(241, 241, 241)", paddingBottom: "0px" }}
