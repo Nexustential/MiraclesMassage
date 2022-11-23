@@ -10,7 +10,16 @@
     justify-content: center;
 } */
 
-#bookFormDiv {
+.bookingModal{ 
+  margin: auto;
+  padding: 1rem;
+}
+.booKingAppointmentTitle{
+  font-family: "Century Gothic";
+}
+
+
+/* #bookFormDiv {
     max-width: 600px;
     width: auto;
     height: auto;
@@ -21,9 +30,9 @@
     box-shadow: 5px 5px;
     max-height: auto;
     background-color: darkgray;
-}
+} */
 
-.invalid {
+/* .invalid {
     border: 2px solid red !important;
   }
   
@@ -34,6 +43,6 @@
   input, textarea {
     outline: none !important;
     box-shadow: none !important;
-  }
+  } */
 
 
