@@ -38,9 +38,10 @@ function BookForm() {
       <Modal
         show={show}
         onHide={handleClose}
+        className='bookingModal'
       >
         <Modal.Header closeButton>
-          <Modal.Title className='ms-auto' id="bookFormTitle">Book Appointment</Modal.Title>
+          <Modal.Title className='booKingAppointmentTitle ms-auto' id="bookFormTitle">Book Appointment</Modal.Title>
         </Modal.Header>
         <Modal.Body>
           <div
@@ -48,10 +49,11 @@ function BookForm() {
             id='bookFormDiv'
           >
 
-      <div className='row justify-content-sm-center pt-5'>
-        <div className='col-sm-6 shadow round pb-3'>
+      <div>
+        <div>
 
           <Formik
+            className="bookingCredentials"
             initialValues={{
               user_name: '', //this needs to be the same as the 'name' in ContactForm, if you add a value here it acts as a placeholder
               age: '',

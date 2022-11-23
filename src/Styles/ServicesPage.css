@@ -54,13 +54,13 @@
 
 .titleForServices {
   text-align: center;
-  font-family: Century Gothic;
+  font-family: "Century Gothic";
   padding-top: 15px;
   padding-bottom: 15px;
 }
 
 .price {
-  font-family: Century gothic;
+  font-family: Century Gothic;
   font-weight: bold;
   text-align: center;
 }
