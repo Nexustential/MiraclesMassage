@@ -6,7 +6,6 @@ import { AiFillInstagram } from "react-icons/ai";
 import { HiOutlineMail } from "react-icons/hi";
 import { AiOutlinePhone } from "react-icons/ai";
 import { HiOutlineLocationMarker } from "react-icons/hi";
-import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -14,17 +13,17 @@ const Footer = () => {
       <footer className="footer">
         <section>
           <div className="iconsection">
-            <a href="https://www.facebook.com/">
+            <a href="https://www.facebook.com/" target="_blank" rel="noreferrer">
             <span className="Icon">
               <BsFacebook />
             </span>
             </a>
-            <a href="https://twitter.com/">
+            <a href="https://twitter.com/" target="_blank" rel="noreferrer">
             <span className="Icon">
               <AiFillTwitterCircle />
             </span>
             </a>
-            <a href="https://instagram.com">
+            <a href="https://instagram.com" target="_blank" rel="noreferrer">
             <span className="Icon">
               <AiFillInstagram />
             </span>

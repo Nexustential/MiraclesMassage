@@ -24,7 +24,7 @@
 
 .servicesPage1 .servicesTextStyleForCardTitle {
   font-size: 2rem;
-  font-family: Century Gothic;
+  font-family: 'Josefin Sans', sans-serif;
   padding-bottom: 30px;
   text-align: center;
 }
@@ -54,7 +54,7 @@
 
 .titleForServices {
   text-align: center;
-  font-family: "Century Gothic";
+  font-family: 'Josefin Sans', sans-serif;
   padding-top: 15px;
   padding-bottom: 15px;
 }
