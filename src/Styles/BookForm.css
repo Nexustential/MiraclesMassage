@@ -1,14 +1,4 @@
-/* #button {
-    display: flex;
-    color: black;
-    align-items: center;
-    justify-content: center;
-}
 
-.buttonDiv {
-    display: flex;
-    justify-content: center;
-} */
 
 .bookingModal{ 
   margin: auto;
@@ -19,30 +9,5 @@
 }
 
 
-/* #bookFormDiv {
-    max-width: 600px;
-    width: auto;
-    height: auto;
-    border: 2px solid black;
-    border-radius: 5px;
-    margin-top: 20px;
-    padding-bottom: 15px;
-    box-shadow: 5px 5px;
-    max-height: auto;
-    background-color: darkgray;
-} */
-
-/* .invalid {
-    border: 2px solid red !important;
-  }
-  
-  .valid {
-    border: 2px solid rgb(13, 145, 25) !important;
-  }
-  
-  input, textarea {
-    outline: none !important;
-    box-shadow: none !important;
-  } */
 
 
