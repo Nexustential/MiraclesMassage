@@ -25,7 +25,7 @@ $activeGrey: rgb(115, 142, 165);
 .services1 {
   max-width: 2000px;
   min-width: 414px;
-  max-height: 1760px;
+  max-height: 1900px;
   height: auto;
   width: auto;
   margin: auto;
@@ -98,6 +98,8 @@ $activeGrey: rgb(115, 142, 165);
   display: none;
 }
 
-.callButton {
+.services1 .callButton {
   margin-top: 5px;
+  padding-left: 23px;
+  padding-right: 23px;
 }

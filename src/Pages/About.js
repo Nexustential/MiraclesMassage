@@ -88,12 +88,12 @@ function About() {
 
           <MDBRow className="text-center">
             <MDBCol md="4" className="mb-5 mb-md-0">
-              <MDBCard className="testimonial-card">
+              <MDBCard className="testimonial-card" style={{ backgroundColor: "rgb(241, 241, 241)" }}>
                 <div
                   className="card-up"
                   style={{ backgroundColor: "darkgray" }}
                 ></div>
-                <div className="avatar mx-auto bg-white">
+                <div className="avatar mx-auto">
                   <MDBCardImage
                     src={require("../images/johannahGladwin.jpg")}
                     className="rounded-circle img-fluid"
@@ -111,12 +111,12 @@ function About() {
               </MDBCard>
             </MDBCol>
             <MDBCol md="4" className="mb-5 mb-md-0">
-              <MDBCard className="testimonial-card">
+              <MDBCard className="testimonial-card" style={{ backgroundColor: "rgb(241, 241, 241)" }}>
                 <div
                   className="card-up"
                   style={{ backgroundColor: "rgb(115, 142, 165)" }}
                 ></div>
-                <div className="avatar mx-auto bg-white">
+                <div className="avatar mx-auto">
                   <MDBCardImage
                     src={require("../images/theoNiles.jpg")}
                     className="rounded-circle img-fluid"
@@ -134,12 +134,12 @@ function About() {
               </MDBCard>
             </MDBCol>
             <MDBCol md="4" className="mb-5 mb-md-0">
-              <MDBCard className="testimonial-card">
+              <MDBCard className="testimonial-card" style={{ backgroundColor: "rgb(241, 241, 241)" }}>
                 <div
                   className="card-up"
                   style={{ backgroundColor: "darkgray" }}
                 ></div>
-                <div className="avatar mx-auto bg-white">
+                <div className="avatar mx-auto">
                   <MDBCardImage
                     src={require("../images/joniSutton.jpg")}
                     className="rounded-circle img-fluid"

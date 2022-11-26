@@ -37,7 +37,7 @@ const Footer = () => {
               <a href="mailto:miraclesmassage22@gmail.com">miraclesmassage22@gmail.com</a>
               <br />
               <AiOutlinePhone style={{ marginRight: "5px" }} />
-              <a href="tel:+2147483647">(214)748-3647</a>
+              <a href="tel:+2147483647">(214) 748-3647</a>
               <br />
               <HiOutlineLocationMarker style={{ marginRight: "5px" }} />
               235 N. Hender Road Winchester, CA 19406
@@ -53,7 +53,7 @@ const Footer = () => {
           </div>
         </section>
         <section className="TermsAndConditions">
-          <p>Terms and Conditions | © 2022 Copyright | Miracles Massage</p>
+          <p><a href="/terms">Terms and Conditions</a> |  Copyright © 2022 | Miracles Massage</p>
         </section>
       </footer>
     </section>
