@@ -41,7 +41,7 @@ function BookForm() {
         className='bookingModal'
       >
         <Modal.Header closeButton>
-          <Modal.Title className='booKingAppointmentTitle ms-auto' id="bookFormTitle">Book Appointment</Modal.Title>
+          <Modal.Title className='bookingAppointmentTitle ms-auto' id="bookFormTitle">Book Appointment</Modal.Title>
         </Modal.Header>
         <Modal.Body>
           <div

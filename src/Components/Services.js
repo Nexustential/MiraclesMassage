@@ -19,28 +19,29 @@ function Services() {
   const [callNow1, setCallNow1] = useState("Call Now");
   const [callNow2, setCallNow2] = useState("Call Now");
   
-  const callPrompt = ("Book Online Or Call Us Any Time!");
+  const pricePrompt = ("60 min: $70 | 90 min: $95");
+  const pricePrompt2 = ("60 min: $80 | 90 min: $110");
   const phoneNumber = ('214-748-3647');
 
   function CallUs(){
     bookButtonVanish();
     bookingPopUp();
     setBook(`${phoneNumber}`);
-    setCall(`${callPrompt}`);
+    setCall(`${pricePrompt}`);
   }
 
   function CallUs1(){
     bookButtonVanish1();
     bookingPopUp1();
     setBook1(`${phoneNumber}`);
-    setCall1(`${callPrompt}`);
+    setCall1(`${pricePrompt}`);
   }
 
   function CallUs2(){
     bookButtonVanish2();
     bookingPopUp2();
     setBook2(`${phoneNumber}`);
-    setCall2(`${callPrompt}`);
+    setCall2(`${pricePrompt2}`);
   }
 
   function bookingPopUp(){
@@ -83,7 +84,7 @@ function Services() {
         <Fade duration={1000}>
         <Card className="serviceCards">
           <Card.Img variant="top" src={require("../images/swedish.jpg")} />
-          <Card.Body>
+          <Card.Body  style={{ backgroundColor: "rgb(241, 241, 241)" }}>
             <Card.Title className="cardTitle">Swedish</Card.Title>
             <Card.Text>
               Swedish massage is one of the most commonly offered massage techniques. It’s sometimes called a classic massage. The technique aims to promote relaxation by releasing muscle tension. 
@@ -109,7 +110,7 @@ function Services() {
 
         <Card className="serviceCards">
           <Card.Img variant="top" src={require("../images/deeptissue.jpg")} />
-          <Card.Body>
+          <Card.Body  style={{ backgroundColor: "rgb(241, 241, 241)" }}>
             <Card.Title className="cardTitle">Deep Tissue</Card.Title>
             <Card.Text>
               In order to reach the deep muscle tissue, a therapist will massage layer by layer of muscle, applying more and more pressure and employing special techniques with the fingers, fists, and even elbows.
@@ -135,7 +136,7 @@ function Services() {
 
         <Card className="serviceCards">
           <Card.Img variant="top" src={require("../images/thai.jpg")} />
-          <Card.Body>
+          <Card.Body  style={{ backgroundColor: "rgb(241, 241, 241)" }}>
             <Card.Title className="cardTitle">Thai</Card.Title>
             <Card.Text>
               Thai massage combines compression, acupressure, and passive stretching. These methods increase the range of motion in your joints and muscles. This can greatly improve your posture and back.

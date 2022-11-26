@@ -1,13 +1,8 @@
-
-
 .bookingModal{ 
   margin: auto;
   padding: 1rem;
 }
-.booKingAppointmentTitle{
-  font-family: "Century Gothic";
+
+.bookingAppointmentTitle{
+  font-family: 'Josefin Sans', sans-serif;
 }
-
-
-
-

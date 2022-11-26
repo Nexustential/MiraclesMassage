@@ -60,11 +60,15 @@
 }
 
 .price {
-  font-family: Century Gothic;
   font-weight: bold;
   text-align: center;
 }
 
 #servicesButtonGroup {
   text-align: center;
+}
+
+.bookServicesButton {
+  padding-left: 12px;
+  padding-right: 12px;
 }
