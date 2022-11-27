@@ -15,22 +15,24 @@
 .overlay {
   display: flex;
   flex-direction: column;
-  height: 100%;
   width: 0%;
+  height: 100%;
   position: fixed;
   z-index: 2;
   right: 0;
+  bottom: 0;
   background: rgb(108, 132, 161);
   opacity: 0.9;
   overflow-x: hidden;
   transition-property: width, box-shadow;
   transition-duration: 300ms;
   transition-timing-function: linear;
+  border-radius: 50px 0px 0px 50px;
 }
 
 .showContent {
   width: 80%;
-  box-shadow: 0px 0px 90px 40px black;
+  box-shadow: 5px 0px 10px 4px black;
 }
 
 .overlayContent {
@@ -40,8 +42,8 @@
   text-decoration: none;
   position: relative;
   top: 25%;
-  width: 100%;
-  left: 31%;
+  width: 170px;
+  left: 33%;
   margin-top: 30px;
   color: white;
   font-size: 2.3em;
@@ -57,4 +59,10 @@
   top: 2px;
   left: -3px;
   font-size: 0.8em;
+}
+
+@media screen and (min-width: 600px) {
+  .overlay {
+    display: none;
+  }
 }
