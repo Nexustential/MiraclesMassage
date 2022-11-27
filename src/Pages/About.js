@@ -36,17 +36,32 @@ function About() {
                     <ListGroup.Item
                       style={{ backgroundColor: "rgb(115, 142, 165)" }}
                     >
-                      <h1 style={{ fontFamily: "Josefin Sans, sans-serif", marginBottom: "-2%" }}>Luis Mujica</h1>
+                      <h1
+                        style={{
+                          fontFamily: "Josefin Sans, sans-serif",
+                          marginBottom: "-2%",
+                        }}
+                      >
+                        Luis Mujica
+                      </h1>
                     </ListGroup.Item>
-                    <ListGroup.Item 
-                      style={{ backgroundColor: "rgb(241, 241, 241)", paddingBottom: "0px" }}
+                    <ListGroup.Item
+                      style={{
+                        backgroundColor: "rgb(241, 241, 241)",
+                        paddingBottom: "0px",
+                      }}
                     >
                       <h5>LMT</h5>
                     </ListGroup.Item>
                     <ListGroup.Item
-                      style={{ backgroundColor: "rgb(241, 241, 241)", paddingBottom: "0px" }}
+                      style={{
+                        backgroundColor: "rgb(241, 241, 241)",
+                        paddingBottom: "0px",
+                      }}
                     >
-                      <p style={{ fontWeight: "600" }}>B.S. Health Sciences - UCF</p>
+                      <p style={{ fontWeight: "600" }}>
+                        B.S. Health Sciences - UCF
+                      </p>
                     </ListGroup.Item>
                   </ListGroup>
                 </Card>
@@ -76,10 +91,19 @@ function About() {
           </MDBRow>
         </MDBContainer>
 
-        <MDBContainer className="my-5 pb-5" id="testimonialContainer" style={{ backgroundColor: "grey" }}>
+        <MDBContainer
+          className="my-5 pb-5"
+          id="testimonialContainer"
+          style={{ backgroundColor: "grey" }}
+        >
           <MDBRow className="d-flex justify-content-center">
             <MDBCol md="10" xl="8" className="text-center">
-              <h1 className="mb-4 my-5" style={{fontFamily: "Josefin Sans, sans-serif"}}>TESTIMONIALS</h1>
+              <h1
+                className="mb-4 my-5"
+                style={{ fontFamily: "Josefin Sans, sans-serif" }}
+              >
+                TESTIMONIALS
+              </h1>
               <h3 className="mb-4 pb-2 mb-md-5 pb-md-0" id="testimonialsHeader">
                 See what our clients have to say!
               </h3>
@@ -88,7 +112,10 @@ function About() {
 
           <MDBRow className="text-center">
             <MDBCol md="4" className="mb-5 mb-md-0">
-              <MDBCard className="testimonial-card" style={{ backgroundColor: "rgb(241, 241, 241)" }}>
+              <MDBCard
+                className="testimonial-card"
+                style={{ backgroundColor: "rgb(241, 241, 241)" }}
+              >
                 <div
                   className="card-up"
                   style={{ backgroundColor: "darkgray" }}
@@ -105,13 +132,18 @@ function About() {
                   <hr />
                   <p className="dark-grey-text mt-4">
                     <MDBIcon fas icon="quote-left" className="pe-2" />
-                    As a nurse, I'm on my feet all day. I didn't know how much of a difference a Thai massage would make towards improving my life until I came to Miracles Massage. Thanks Luis!
+                    As a nurse, I'm on my feet all day. I didn't know how much
+                    of a difference a Thai massage would make towards improving
+                    my life until I came to Miracles Massage. Thanks Luis!
                   </p>
                 </MDBCardBody>
               </MDBCard>
             </MDBCol>
             <MDBCol md="4" className="mb-5 mb-md-0">
-              <MDBCard className="testimonial-card" style={{ backgroundColor: "rgb(241, 241, 241)" }}>
+              <MDBCard
+                className="testimonial-card"
+                style={{ backgroundColor: "rgb(241, 241, 241)" }}
+              >
                 <div
                   className="card-up"
                   style={{ backgroundColor: "rgb(115, 142, 165)" }}
@@ -128,13 +160,19 @@ function About() {
                   <hr />
                   <p className="dark-grey-text mt-4">
                     <MDBIcon fas icon="quote-left" className="pe-2" />
-                    My coach advised me to begin sports therapy so that I could stay in the best physical shape possible after intense workouts and games, so I went to Miracles & Luis did not disappoint!
+                    My coach advised me to begin sports therapy so that I could
+                    stay in the best physical shape possible after intense
+                    workouts and games, so I went to Miracles & Luis did not
+                    disappoint!
                   </p>
                 </MDBCardBody>
               </MDBCard>
             </MDBCol>
             <MDBCol md="4" className="mb-5 mb-md-0">
-              <MDBCard className="testimonial-card" style={{ backgroundColor: "rgb(241, 241, 241)" }}>
+              <MDBCard
+                className="testimonial-card"
+                style={{ backgroundColor: "rgb(241, 241, 241)" }}
+              >
                 <div
                   className="card-up"
                   style={{ backgroundColor: "darkgray" }}
@@ -150,8 +188,10 @@ function About() {
                   <h4 className="mb-4">Joni Sutton</h4>
                   <hr />
                   <p className="dark-grey-text mt-4">
-                    <MDBIcon fas icon="quote-left" className="pe-2" />
-                    I spend my entire work day sitting in my office and I started having sharp back pains from bad posture. I scheduled a trigger point massage with Luis and now my back feels amazing!
+                    <MDBIcon fas icon="quote-left" className="pe-2" />I spend my
+                    entire work day sitting in my office and I started having
+                    sharp back pains from bad posture. I scheduled a trigger
+                    point massage with Luis and now my back feels amazing!
                   </p>
                 </MDBCardBody>
               </MDBCard>
