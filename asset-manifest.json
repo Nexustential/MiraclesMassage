@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/MiraclesMassage/static/css/main.3da100d4.css",
-    "main.js": "/MiraclesMassage/static/js/main.fab986fb.js",
+    "main.css": "/MiraclesMassage/static/css/main.70064b78.css",
+    "main.js": "/MiraclesMassage/static/js/main.50247844.js",
     "static/js/787.60519e20.chunk.js": "/MiraclesMassage/static/js/787.60519e20.chunk.js",
     "static/media/sports.jpg": "/MiraclesMassage/static/media/sports.222df432fa8e40207513.jpg",
     "static/media/massage3.jpg": "/MiraclesMassage/static/media/massage3.7a6a9bdf760dc3c25f11.jpg",
@@ -18,12 +18,12 @@
     "static/media/luisPic.jpg": "/MiraclesMassage/static/media/luisPic.d2347a49c8cae873a96a.jpg",
     "static/media/logoMiracles.png": "/MiraclesMassage/static/media/logoMiracles.cfa93d082188623fa062.png",
     "index.html": "/MiraclesMassage/index.html",
-    "main.3da100d4.css.map": "/MiraclesMassage/static/css/main.3da100d4.css.map",
-    "main.fab986fb.js.map": "/MiraclesMassage/static/js/main.fab986fb.js.map",
+    "main.70064b78.css.map": "/MiraclesMassage/static/css/main.70064b78.css.map",
+    "main.50247844.js.map": "/MiraclesMassage/static/js/main.50247844.js.map",
     "787.60519e20.chunk.js.map": "/MiraclesMassage/static/js/787.60519e20.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.3da100d4.css",
-    "static/js/main.fab986fb.js"
+    "static/css/main.70064b78.css",
+    "static/js/main.50247844.js"
   ]
 }
