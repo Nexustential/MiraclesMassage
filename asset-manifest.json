@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/MiraclesMassage/static/css/main.4e07db97.css",
+    "main.js": "/MiraclesMassage/static/js/main.47c969d7.js",
+    "static/js/787.60519e20.chunk.js": "/MiraclesMassage/static/js/787.60519e20.chunk.js",
+    "static/media/sports.jpg": "/MiraclesMassage/static/media/sports.222df432fa8e40207513.jpg",
+    "static/media/massage3.jpg": "/MiraclesMassage/static/media/massage3.7a6a9bdf760dc3c25f11.jpg",
+    "static/media/swedish.jpg": "/MiraclesMassage/static/media/swedish.2e494c4bf7d141aa5e2f.jpg",
+    "static/media/massage2.jpg": "/MiraclesMassage/static/media/massage2.4e03a80071390aaf962a.jpg",
+    "static/media/thai.jpg": "/MiraclesMassage/static/media/thai.c9e4fc32d6c4c2553ad3.jpg",
+    "static/media/deeptissue.jpg": "/MiraclesMassage/static/media/deeptissue.c37905c510189be3f0c6.jpg",
+    "static/media/structural.jpg": "/MiraclesMassage/static/media/structural.74088ff1cdef9b4c5319.jpg",
+    "static/media/massage1.jpg": "/MiraclesMassage/static/media/massage1.7e5078de3be94d34181f.jpg",
+    "static/media/johannahGladwin.jpg": "/MiraclesMassage/static/media/johannahGladwin.87f19c44c75ab4091466.jpg",
+    "static/media/theoNiles.jpg": "/MiraclesMassage/static/media/theoNiles.d4afdf2fee19e6fc3d17.jpg",
+    "static/media/triggerPoint.jpg": "/MiraclesMassage/static/media/triggerPoint.37cf0d6f3cdb6de38740.jpg",
+    "static/media/joniSutton.jpg": "/MiraclesMassage/static/media/joniSutton.cb7d3c97a93e1cb76966.jpg",
+    "static/media/luisPic.jpg": "/MiraclesMassage/static/media/luisPic.d2347a49c8cae873a96a.jpg",
+    "static/media/logoMiracles.png": "/MiraclesMassage/static/media/logoMiracles.cfa93d082188623fa062.png",
+    "index.html": "/MiraclesMassage/index.html",
+    "main.4e07db97.css.map": "/MiraclesMassage/static/css/main.4e07db97.css.map",
+    "main.47c969d7.js.map": "/MiraclesMassage/static/js/main.47c969d7.js.map",
+    "787.60519e20.chunk.js.map": "/MiraclesMassage/static/js/787.60519e20.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4e07db97.css",
+    "static/js/main.47c969d7.js"
+  ]
+}
