@@ -1,19 +1,19 @@
 .missionStatement {
   background-color: rgb(110, 129, 145);
   max-width: 2000px;
-  min-width: 360px;
+  min-width: 320px;
   width: auto;
   height: auto;
-  max-height: 600px;
+  max-height: 700px;
   margin: auto;
   text-align: center;
   flex-wrap: wrap;
 }
 
 .missionStatement p {
-  margin-top: 2em;
-  margin-right: 2em;
-  margin-left: 2em;
+  margin-top: 1em;
+  margin-right: 1em;
+  margin-left: 1em; 
   padding-bottom: 1em;
   width: auto;
   max-width: 1000px;
@@ -24,4 +24,6 @@
 
 .missionStatement h1 {
   font-family: "Josefin Sans", sans-serif;
+  padding-left: 4px;
+  padding-right: 4px;
 }

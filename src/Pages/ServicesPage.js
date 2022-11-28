@@ -66,7 +66,7 @@ function ServiceCards(){
             <Card.Img className="servicesImageStyle" src={card.Image} />
             <div className="servicesTextStyleForCard">
               <Card.Title className="servicesTextStyleForCardTitle">{card.title}</Card.Title>
-              <Card.Text>
+              <Card.Text style={{ textAlign: "center" }}>
                 {card.text}
                 <br />
                 <br />
