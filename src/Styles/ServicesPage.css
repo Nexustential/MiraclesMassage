@@ -20,6 +20,7 @@
   padding-left: 2rem;
   color: #000000;
   font-size: larger;
+  display: inline;
 }
 
 .servicesPage1 .servicesTextStyleForCardTitle {

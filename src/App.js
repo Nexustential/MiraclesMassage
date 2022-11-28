@@ -5,10 +5,12 @@ import Home from "./Pages/Home";
 import ServicesPage from "./Pages/ServicesPage";
 import Footer from "./Components/Footer";
 import Terms from "./Pages/TermsAndConditions";
+import ScrollToTop from "./Components/ScrollToTop";
 
 const App = () => {
   return (
     <div>
+      <ScrollToTop />
       <NavBar />
       <Routes>
         <Route path="/" element={<Home />} />
