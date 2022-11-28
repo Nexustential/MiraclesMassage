@@ -13,20 +13,24 @@ const Footer = () => {
       <footer className="footer">
         <section>
           <div className="iconsection">
-            <a href="https://www.facebook.com/" target="_blank" rel="noreferrer">
-            <span className="Icon">
-              <BsFacebook />
-            </span>
+            <a
+              href="https://www.facebook.com/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <span className="Icon">
+                <BsFacebook />
+              </span>
             </a>
             <a href="https://twitter.com/" target="_blank" rel="noreferrer">
-            <span className="Icon">
-              <AiFillTwitterCircle />
-            </span>
+              <span className="Icon">
+                <AiFillTwitterCircle />
+              </span>
             </a>
             <a href="https://instagram.com" target="_blank" rel="noreferrer">
-            <span className="Icon">
-              <AiFillInstagram />
-            </span>
+              <span className="Icon">
+                <AiFillInstagram />
+              </span>
             </a>
           </div>
           <div className="footerContainer">
@@ -34,7 +38,9 @@ const Footer = () => {
               Questions?
               <br />
               <HiOutlineMail style={{ marginRight: "5px" }} />
-              <a href="mailto:miraclesmassage22@gmail.com">miraclesmassage22@gmail.com</a>
+              <a href="mailto:miraclesmassage22@gmail.com">
+                miraclesmassage22@gmail.com
+              </a>
               <br />
               <AiOutlinePhone style={{ marginRight: "5px" }} />
               <a href="tel:+2147483647">(214) 748-3647</a>
@@ -53,7 +59,10 @@ const Footer = () => {
           </div>
         </section>
         <section className="TermsAndConditions">
-          <p><a href="/terms">Terms and Conditions</a> |  Copyright © 2022 | Miracles Massage</p>
+          <p>
+            <a href="/terms">Terms and Conditions</a> | Copyright © 2022 |
+            Miracles Massage
+          </p>
         </section>
       </footer>
     </section>

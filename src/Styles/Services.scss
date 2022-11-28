@@ -4,7 +4,7 @@ $activeGrey: rgb(115, 142, 165);
 .serviceCardHeader {
   background-color: $bg-color;
   max-width: 2000px;
-  min-width: 414px;
+  min-width: 360px;
   max-height: 600px;
   height: 40px;
   width: auto;
@@ -15,7 +15,7 @@ $activeGrey: rgb(115, 142, 165);
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: "Josefin Sans", sans-serif;
 }
 
 .services {
@@ -24,7 +24,7 @@ $activeGrey: rgb(115, 142, 165);
 
 .services1 {
   max-width: 2000px;
-  min-width: 414px;
+  min-width: 360px;
   max-height: 1900px;
   height: auto;
   width: auto;
@@ -55,7 +55,7 @@ $activeGrey: rgb(115, 142, 165);
 }
 
 .services1 .cardTitle {
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: "Josefin Sans", sans-serif;
   font-size: 25px;
   padding-bottom: 15px;
 }

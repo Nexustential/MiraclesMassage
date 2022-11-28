@@ -1,7 +1,7 @@
 .missionStatement {
   background-color: rgb(110, 129, 145);
   max-width: 2000px;
-  min-width: 414px;
+  min-width: 360px;
   width: auto;
   height: auto;
   max-height: 600px;
@@ -11,7 +11,9 @@
 }
 
 .missionStatement p {
-  margin: 2em;
+  margin-top: 2em;
+  margin-right: 2em;
+  margin-left: 2em;
   padding-bottom: 1em;
   width: auto;
   max-width: 1000px;
@@ -21,5 +23,5 @@
 }
 
 .missionStatement h1 {
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: "Josefin Sans", sans-serif;
 }
